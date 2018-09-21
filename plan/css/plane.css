@@ -28,7 +28,7 @@ img:nth-of-type(1) {
   width: 320px;
   height: 568px;
   overflow: hidden;
-  background-image: url(/img/background-start.png);
+  background-image: url(../img/background-start.png);
   background-size: 100% 100%;
   display: block;
 }
@@ -55,7 +55,7 @@ img:nth-of-type(1) {
   height: 568px;
   overflow: hidden;
   display: none;
-  background-image: url(/img/background-game.png);
+  background-image: url(../img/background-game.png);
 }
 .superbox .bigbox2 .grade {
   position: absolute;
