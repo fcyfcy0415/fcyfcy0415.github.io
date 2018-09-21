@@ -1,0 +1,2488 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+			<style type="text/css" id="bigbox1">
+				 body
+				 	{
+				    position: relative;	
+				    z-index: -7;	
+				 	margin: 0 auto;
+				 	padding: 0px;	
+				 	min-width: 1200px;
+				 	background-image:url(img/body1.jpg);
+				 	background-attachment: fixed;
+				 	background-position:50% 0;
+				 	background-size:3021px auto;
+				 	}
+				.background
+				   {
+				   	position: fixed;
+					left: 0px;
+					right: 0px;
+					margin: 0 auto;
+					width: 100%;
+					min-width: 1200px;
+					height: 1000px;
+					
+					background-image:url(img/E.jpg) ;
+					background-size:1930px 925px;
+					background-repeat: no-repeat;
+					background-position: 50% -13px;
+					z-index: -8;
+					} 	
+				 	div,ul,li,a
+				 	{
+				 		padding: 0;
+				 		margin: 0;
+				 	}
+				 	a
+				 	{
+				 		list-style: none;
+				 		text-decoration: none;
+				 	}
+				.bigbox1
+				{
+					position: relative;
+					margin: 0px;
+					padding: 0px;
+					
+					width: 100%;
+					min-width: 1400px;
+					height: 40px;
+					
+					box-shadow: 0px 1px 0px 0px #4B2E29;
+					box-sizing: border-box;
+					background-color: #2c0903;
+				} 	
+				.box1-1
+				{
+					/*position: relative;*/
+					margin: 0 auto;
+					
+					width: 80%;
+					max-width: 1600px;
+					height: 40px;
+					
+					/*background-color: white;*/
+					/*box1-1 的宽度在1120px--1600px*/
+				}
+				.left1
+				{
+					float: left;
+					
+					width: 660px;
+					height: 40px;
+					z-index: 100;
+					/*background-color: blue;*/
+				}
+				
+				.left1 ul li
+				{
+					margin-left: 30px;
+								
+					display: block;
+					float: left;
+					
+					/*background-color: red;*/
+				}
+				.left1 ul li:nth-of-type(1)
+				{
+					width: 62px;
+					text-indent: -1000em;
+					/*background-color: red;*/
+					background-image: url(img/iocF.png);
+					background-position: -18px -75px;
+				}
+				.left1 ul li:nth-of-type(1):hover
+				{
+					background-position: -18px -119px;
+				}
+				.left1 ul li a,
+				.right1 ul li a
+				{
+					position: relative;
+					padding-right: 30px;
+					display: block;
+					
+					color: grey;
+					line-height: 40px;
+					z-index: 3;
+					/*background-color: red;*/
+				}
+				
+				/*游戏栏1 begin*/
+				.left1 ul li:nth-of-type(2)+div ,              /*半透明黑色 背景*/
+				.left1 ul li:nth-of-type(5):hover +div
+				{
+					position: absolute;
+					top:0px;
+					left: 0px;
+					width: 0px;
+					height: 0px;
+					
+					z-index: 1;
+					background-color:rgba(0,0,0,.5);
+				}
+				.left1 ul li:nth-of-type(2):hover +div ,       /*半透明黑色 背景 变化*/
+				.left1 ul li:nth-of-type(5):hover +div
+				{
+					width: 100%;
+					z-index: 1;
+					height: 100vh;
+				}
+				.left1 ul li:nth-of-type(2)>a:after,          /* a 后面的箭头*/
+				.left1 ul li:nth-of-type(5)>a:after,
+				.right1 ul li:nth-of-type(1)>a:after 
+				{
+					content: "";
+					margin-left: 5px;
+					width: 20px;
+					height: 14px;
+					
+					display: inline-block;
+				
+					/*background-color: black;*/
+					background-image: url(img/iocF.png);
+					background-position: -147px -128px;
+				}
+				.box1-2                                      /* 游戏栏1 最大外框*/
+				{
+					position:absolute;
+					top: 40px;
+					left: 0px;
+				
+					width: 100%;
+					height: 0px;
+					min-width: 1400px;
+					overflow: hidden;
+					
+					box-sizing: border-box;
+					z-index: 100;
+					opacity: 0;
+				}
+				.box1-2 div div                                  
+				{
+					position: relative;
+					top: 0px;
+					margin-left: 15px;
+					margin-right: 15px;
+					width: 180px;
+					
+					float: left;
+					opacity: 0;
+					border: 1px solid gray;
+					background-size: 100% 100%;
+				}
+				.box1-2 div div:nth-of-type(1){background-image: url(img/img1.jpg);}
+				.box1-2 div div:nth-of-type(2){background-image: url(img/img2.jpg);}
+				.box1-2 div div:nth-of-type(3){background-image: url(img/img3.jpg);}
+				.box1-2 div div:nth-of-type(4){background-image: url(img/img4.jpg);}
+				.box1-2 div div:nth-of-type(5){background-image: url(img/img5.jpg);}
+				.box1-2 div div:nth-of-type(6){background-image: url(img/img6.jpg);}
+				
+				.left1 ul li:nth-of-type(2):hover>a:after,            /* a后 箭头 变化*/
+				.left1 ul li:nth-of-type(5):hover>a:after,
+				.right1 ul li:nth-of-type(1):hover>a:after 
+				{
+					content: "";
+					margin-left: 5px;
+					width: 20px;
+					height: 14px;
+					
+					display: inline-block;
+				
+					/*background-color:black;*/
+					background-image: url(img/iocF.png);
+					background-position: -147px -140px;
+				}
+				.left1 ul li:nth-of-type(2):hover .box1-2              /*游戏栏1 变化*/
+				{
+					position:absolute;
+					top: 40px;
+					left: 0px;
+					
+					height: 270px;
+					width: 100%;
+					min-width: 1400px;
+					
+					border: 1px solid #393D44;
+					opacity: 1;
+					transition: opacity 3s;
+					background:linear-gradient(#242D3D,#151922);
+				}
+				.left1 ul li:nth-of-type(2):hover .box1-2 div
+				{
+					margin: 0 auto;
+					
+					width: 1260px;
+					height: 270px;
+					z-index: 100;
+					/*transition: all 1s;*/
+					/*background-color: gold;*/
+				}
+				.left1 ul li:nth-of-type(2):hover .box1-2 div div
+				{
+					float: left;
+					top: 45px;
+					margin-left: 15px;
+					margin-right: 15px;
+					
+					width: 180px;
+					height: 180px;
+					
+					z-index: 100;
+					box-sizing: border-box;
+					opacity: 1;
+					/*background-color: palegoldenrod;*/
+				}
+				.left1 ul li:nth-of-type(2):hover .box1-2 div div:nth-of-type(1){transition: top  .2s;}
+				.left1 ul li:nth-of-type(2):hover .box1-2 div div:nth-of-type(2){transition: top  .7s, opacity  .2s;}
+				.left1 ul li:nth-of-type(2):hover .box1-2 div div:nth-of-type(3){transition: top 1.2s, opacity  .7s;}
+				.left1 ul li:nth-of-type(2):hover .box1-2 div div:nth-of-type(4){transition: top 1.7s, opacity 1.2s;}
+				.left1 ul li:nth-of-type(2):hover .box1-2 div div:nth-of-type(5){transition: top 2.2s, opacity 1.7s;}
+				.left1 ul li:nth-of-type(2):hover .box1-2 div div:nth-of-type(6){transition: top 2.7s, opacity 2.2s;}
+				
+				.box1-2 div div:hover
+				{
+					border: 1px solid white;
+					/*box-shadow: 1px 1px 1px 1px rgba(255,255,255,1);*/
+					filter: brightness(120%);
+				}
+				.left1 ul li a:hover,
+				.right1 ul li a:hover
+				{
+					color: white;
+				}
+				/*游戏栏1 end*/
+				
+				/*游戏栏2 begin*/
+				.box1-3                                      /* 游戏栏1 最大外框*/
+				{
+					position:absolute;
+					top: 40px;
+					left: 0px;
+				
+					width: 100%;
+					height: 0px;
+					min-width: 1400px;
+					overflow: hidden;
+					
+					box-sizing: border-box;
+					z-index: 3;
+					opacity: 0;
+				}
+				.box1-3 .box1-3-1
+				{
+					position: relative;
+					display: table;
+					margin: 0 auto;
+					
+					height: 276px;
+					/*min-width: 960px;*/
+					
+					/*background-color: blue;*/
+				}
+				.box1-3 .box1-3-1 div
+				{
+					margin-top: -40px;
+					opacity: 0;
+					
+					display: table-cell;
+					float: left;
+					
+					width: 16vw;
+					max-width: 192px;
+					min-width: 172px;
+					height: 276px;
+					
+					overflow: hidden;
+					/*background-color: orange;*/
+				}
+				
+				.box1-3 .box1-3-1 div div
+				{			
+					width: 16vw;
+					max-width: 192px;
+					min-width: 172px;
+					height: 16vw;
+					max-height: 192px;
+					
+					/*background-color: red;*/
+					background-size: 100% 100%;
+				}
+				.box1-3 .box1-3-1 div p
+				{
+					
+					width: 16vw;
+					max-width: 192px;
+					min-width: 172px;
+					line-height: 40px;
+					color: gray;
+					/*background-color: green;*/
+					text-align: center;
+				}
+		        .box1-3 .box1-3-1 div:nth-of-type(2)
+		        {
+		        	margin-top: 0px;
+		        	width: 0px;
+		        	min-width: 0px;
+		        	height: 276px;
+		        	overflow: hidden;
+		        	
+		        	opacity: 0;
+		        	transition: all .5s;
+		        	background-color: #20252C;
+		        }
+			    .box1-3 .box1-3-1 div:nth-of-type(2) div
+			    {
+			      	width: 100px;
+			      	min-width: 80px;
+			      	max-width: 100px;
+			      	height: 93px;
+			      	background-size: 100% 100%;
+			   	}
+				.box1-3 .box1-3-1 div:nth-of-type(2) div:nth-of-type(1){background-image: url(img/img2-6.png);}
+				.box1-3 .box1-3-1 div:nth-of-type(2) div:nth-of-type(2){background-image: url(img/img2-7.png);}
+				.box1-3 .box1-3-1 div:nth-of-type(2) div:nth-of-type(3){background-image: url(img/img2-8.png);}
+					
+				.box1-3 .box1-3-1 div:nth-of-type(1) div{background-image: url(img/img2-1.png);}		
+				.box1-3 .box1-3-1 div:nth-of-type(3) div{background-image: url(img/img2-2.png);}
+				.box1-3 .box1-3-1 div:nth-of-type(4) div{background-image: url(img/img2-3.png);}
+				.box1-3 .box1-3-1 div:nth-of-type(5) div{background-image: url(img/img2-4.png);}
+				.box1-3 .box1-3-1 div:nth-of-type(6) div{background-image: url(img/img2-5.png);}
+			
+				.left1 ul li:nth-of-type(5):hover .box1-3
+				{
+					position: absolute;
+					top: 40px;
+					left: 0px;
+					
+					height: 328px;
+					width: 100%;
+					min-width: 1400px;
+					
+					opacity: 1;
+					
+					border-top: 1px solid #393D44;
+					border-bottom: 1px solid #3D434D;
+					transition: opacity 1.5s;
+					background:linear-gradient(#242D3D,#151922);
+				}
+				.left1 ul li:nth-of-type(5):hover .box1-3 .box1-3-2 div a{margin-top: 0px;opacity: 1;}
+				
+				.left1 ul li:nth-of-type(5):hover .box1-3 .box1-3-1 div{margin-top: 0px; opacity: 1;}
+				.left1 ul li:nth-of-type(5):hover .box1-3 .box1-3-1 div:nth-of-type(1){transition: margin-top 0s,opacity 0s;}
+				.left1 ul li:nth-of-type(5):hover .box1-3 .box1-3-1 div:nth-of-type(3){transition: margin-top .3s,opacity 0s;}
+				.left1 ul li:nth-of-type(5):hover .box1-3 .box1-3-1 div:nth-of-type(4){transition: margin-top .6s,opacity .3s .2s;}
+				.left1 ul li:nth-of-type(5):hover .box1-3 .box1-3-1 div:nth-of-type(5){transition: margin-top .9s,opacity .3s .3s;}
+				.left1 ul li:nth-of-type(5):hover .box1-3 .box1-3-1 div:nth-of-type(6){transition: margin-top 1.2s,opacity .3s .4s;}
+				
+				.box1-3 .box1-3-1 div:nth-of-type(1):hover+div {width: 100px; opacity: 1;}
+				.box1-3 .box1-3-1 div:nth-of-type(2):hover     {width: 100px; opacity: 1;}
+				
+				.box1-3 .box1-3-1>div:nth-of-type(1):hover,
+				.box1-3 .box1-3-1>div:nth-of-type(3):hover,
+				.box1-3 .box1-3-1>div:nth-of-type(4):hover,
+				.box1-3 .box1-3-1>div:nth-of-type(5):hover,
+				.box1-3 .box1-3-1>div:nth-of-type(6):hover
+				{ background-color:#393D44;}
+				.box1-3 .box1-3-1 div:nth-of-type(1):hover p,
+				.box1-3 .box1-3-1 div:nth-of-type(3):hover p,
+				.box1-3 .box1-3-1 div:nth-of-type(4):hover p,
+				.box1-3 .box1-3-1 div:nth-of-type(5):hover p,
+				.box1-3 .box1-3-1 div:nth-of-type(6):hover p
+				{color: white;}
+				.box1-3 .box1-3-1>div:nth-of-type(2)>div:hover
+				{background-color:#393D44;} 
+				.box1-3 .box1-3-2 
+				{
+					position: relative;
+					width: 100%;
+					height: 52px;
+					
+					overflow: hidden;
+					border-top:1px solid #242831 ;
+					border-bottom: 1px solid #3D434D;
+					/*background-color: blue;*/
+				}
+				.box1-3 .box1-3-2 div 
+				{
+					position: relative;
+					margin: 0 auto;
+					width: 120px;
+					height: 52px;
+				}
+				.box1-3 .box1-3-2 div svg
+				{
+					position: relative;
+					top: 19px;
+					left: 0px;
+					float: left;
+					
+					height: 52px;
+					width: 18px;
+				}
+				.box1-3 .box1-3-2 div a
+				{
+					opacity: 0;
+					margin-top: -40px;
+					line-height: 52px;
+					padding: 0px;
+					width: 100px;
+					color: gainsboro;
+		
+					transition: margin-top 2s,opacity 1s;
+					text-align: center;
+				}
+				/*游戏栏2 end*/
+				
+				.right1
+				{
+					position:relative;
+					float: right;
+					
+					width: 460px;
+					height: 40px;
+					
+					/*background-color: green;*/
+				}
+				.right1 ul li
+				{
+					margin-right: 30px;
+					
+					display: block;
+					float: right;
+					
+					/*background-color: red;*/
+				}
+				
+		    </style>
+	        <style type="text/css" id="bigbox2">
+				.bigbox2
+				{
+					position: relative;
+					
+					margin: 0 auto;
+					width: 1024px;
+					height: 223px;
+					
+					/*background-color: rgba(0,0,0,0.5);*/
+				}
+				.box2-1
+				{
+					position: absolute;
+					top: 32px;
+					left: 10px;
+					width: 350px;
+					height: 184px;
+					
+					background-image:url(img/img2-1-1.png);
+					background-size: 100% 100%;
+				}
+				.box2-2
+				{
+					position: absolute;
+					right: 21px;
+					top: 147px;
+					
+					width: 302px;
+					height: 42px;
+					
+					/*background-color: wheat;*/
+				}
+				.box2-2 form input[type="text"]
+				{
+					position: absolute;
+					padding: 4px 35px 4px 10px;
+					
+					width: 302px;
+					height: 42px;
+					
+					color: #8BB6AD;
+					border: 1px solid #8BB6AD;
+					box-sizing: border-box;
+					background-color: rgba(0,0,0,0.3);
+				}
+				.box2-2 form input[type="submit"]
+				{
+					position: absolute;
+					top: 8.5px;
+					left: 272px;
+					
+					width: 25px;
+					height: 25px;
+					
+					border: 0px;
+					background: url(img/img2-1-5.png) no-repeat;
+					background-color:none;
+				}
+			
+	        </style>
+	        <style type="text/css" id="box2-3">
+        		.box2-3
+				{
+					position: sticky;
+					top: 0px;
+					margin: 0 auto;
+					width: 1024px;
+					height: 52px;
+				}
+				.box2-3 ul
+				{
+					display: block;
+					position: relative;
+					padding-left:58px ;
+					width: 1021px;
+					height: 52px;
+					
+					list-style: none;
+					background: url(img/img2-1-2.jpg) no-repeat;
+				}
+				.box2-3 ul li
+				{
+					position: relative;
+					float: left;
+					width: 114px;
+					height: 52px;
+				}
+				.box2-3 ul li:nth-of-type(1){background: url(img/img2-1-2.jpg) no-repeat;background-position:-58px -52px;}
+				.box2-3 ul li:nth-of-type(2):hover{background: url(img/img2-1-2.jpg) no-repeat;background-position:-172px -52px;}
+				.box2-3 ul li:nth-of-type(3):hover{background: url(img/img2-1-2.jpg) no-repeat;background-position:-286px -52px;}
+				.box2-3 ul li:nth-of-type(4):hover{background: url(img/img2-1-2.jpg) no-repeat;background-position:-400px -52px;}
+				.box2-3 ul li:nth-of-type(5):hover{background: url(img/img2-1-2.jpg) no-repeat;background-position:-514px -52px;}
+				.box2-3 ul li:nth-of-type(6):hover{background: url(img/img2-1-2.jpg) no-repeat;background-position:-628px -52px;}
+				.box2-3 ul li:nth-of-type(7):hover{background: url(img/img2-1-2.jpg) no-repeat;background-position:-742px -52px;}
+				.box2-3 ul li:nth-of-type(8):hover{background: url(img/img2-1-2.jpg) no-repeat;background-position:-856px -52px;}
+				.box2-3 ul li>a
+				{
+					position: relative;
+					display: block;
+					width: 114px;
+					height: 52px;					
+				}
+				.box2-3 ul li>a+div
+				{
+					position: relative;
+					width: 0px;
+					overflow: hidden;
+					z-index: 3;
+					background-color: #4A0603;
+				}
+				.box2-3 ul li>a+div{margin-top: -3px;}
+				.box2-3 ul li>a+div div
+				{
+					position: relative;
+					width: 114px;
+					height: 42px;
+					z-index: 3;
+					background-color:#4A0603 ;
+				}
+				.box2-3 ul li>a+div div a
+				{
+					position: relative;
+					display: block;
+					padding-left:20px ;
+					width: 114px;
+					line-height: 42px;
+					z-index: 3;
+					box-sizing: border-box;
+					color:gray;
+				}
+				
+				
+				.box2-3 ul li>a:hover+div{width: 114px;}
+				.box2-3 ul li>a+div:hover{width: 114px;}
+				.box2-3 ul li>a+div div:hover a{background-color: #81120c; color: white;}
+				
+				.box2-3 ul .box2-3fl
+				{
+					position: absolute;
+					top: -18px;
+					left: -38px;
+					
+					width: 96px;
+					height: 74px;
+					
+					background-image: url(img/img2-1-3.png);
+					background-repeat: no-repeat;
+				}
+				.box2-3 ul .box2-3fr
+				{
+					position: absolute;
+					top: -18px;
+					right: 20px;
+					
+					width: 95px;
+					height: 69px;
+					
+					background-image: url(img/img2-1-4.png);
+					background-repeat: no-repeat;
+				}
+	        </style>
+			<style type="text/css" id="bigbox3">
+				.bigbox3
+				{
+					position: relative;
+					margin: 0 auto 120px;
+					
+					width: 1024px;
+					
+					z-index: -2;
+					overflow: hidden;
+				}
+				.bigbox4
+				{
+					position: relative;
+					float: left;
+					
+					width: 703px;
+					
+					z-index: 2;
+					background-image: url(img/img4-3.png);
+					background-size: 100% auto;
+					
+				}
+				.bigbox6
+				{
+					position: relative;
+					float: left;
+					bottom: 20px;
+					
+					width: 703px;
+					height: 32px;
+					
+					z-index: 2;
+					background-image: url(img/box4-3-5.png);
+					background-size: 100% auto;
+				}
+				.bigbox5
+				{
+					position: absolute;
+					top: 0;
+					right: 0;
+					
+					width: 340px;
+					z-index: 1;
+					background-image: url(img/box5-1-4.png);
+					
+				}
+			</style>	
+	        <style type="text/css" id="bigbox4">
+	        	.box4-1
+	        	{
+	        		position: relative;
+	        		margin: 0 auto;
+	        		
+	        		width: 640px;
+	        		height: 296px;
+	        		
+	        		border-left:2px solid #B7894C;
+	        		border-right:2px solid #B7894C;
+	        		border-bottom:2px solid #B7894C;
+	        		background-image: url(img/img4-1.jpg);
+	        		background-size: 100% 100%;
+	        	}
+	        	.box4-1-2
+	        	{
+	        		position: absolute;
+	        		bottom: 0px;
+	        		width: 100%;
+	        		height: 42px;
+	        		border-top: 1px solid #B7894C;
+	        		background-color: rgba(0,0,0,.5);
+	        	}
+	        	.box4-1-2 .left4-1 {float:  left;width: 500px; height: 42px;}
+	        	.box4-1-2 .right4-1{float: right;width: 103px; height: 42px;}
+	        	.box4-1-2 .left4-1 p
+	        	{
+	        		margin: 0px auto 0px 10px;
+	        	
+	        		line-height: 42px;
+	        		
+	        		size: 18px;
+	        		font-weight: 900;
+	        		color: white;
+	        	}
+	        
+	        	.box4-1-2 .right4-1 a
+	        	{
+	        		display: block;
+	        		margin-top: 3.4px;
+	        		
+	        		height: 33.5px;
+	        		width:64px;
+	        		
+	        		border: 1px solid #FFDE00;
+	        		background-image: url(img/G.jpg);
+	        		background-size: 100% 100%;
+	        	}
+	        	
+	        	.box4-2
+	        	{
+	        	    position: relative;
+	        	    margin: 0 auto;
+	        		padding: 35px 0 0 0;
+	        		width: 663px;
+	        		height: 218px;
+	        		
+	        		background-image: url(img/box4-2-4.jpg);
+	        		background-repeat: no-repeat;
+	        		background-position-x: 50%;
+	        		background-position-y: 100%;
+	        	}
+	        	.box4-2-1
+	        	{
+	        		position: relative;
+	        		float: left;
+	        		width: 288px;
+	        		height: 191px;
+	        		padding: 10px;
+	        		margin-left:16px;
+	        		background-image: url(img/box4-2-1.png);
+	        		background-size:100% auto ;
+	        	}
+	        	.box4-2-1 div
+	        	{
+	        		position: relative;
+	        		margin: 0 auto auto auto;
+	        		/*padding: 2px;*/
+	        		width: 280px;
+	        		height: 140px;
+	        		border:2px solid #E8d7b9;
+	        	
+	        	}
+	        	.box4-2-1 div:hover 
+	        	{
+	        		border:2px solid greenyellow;
+	        	}
+	        	.box4-2-1 div a
+	        	{
+	        		position: absolute;
+	        		
+	        		margin: 0 auto;
+	        		display: block;
+	        		width: 280px;
+	        		height: 140px;
+	        		/*box-sizing: border-box;*/
+	        		background-image: url(img/box4-2-2.jpg);
+	        		background-position: 50% 50%;
+	        	}
+	        	.box4-2-1 p
+	        	{
+	        		margin: 0 auto;
+	        		margin-top: 8px;
+	        		
+	        		width: 288px;
+	        		line-height: 44px;
+	        		
+	        		font-size: 16px;
+	        		color: black;
+	        		font-weight: 700;
+	        		text-align: center;
+	        	}
+	        	.box4-2-2
+	        	{
+	        		position: relative;
+	        		float: right;
+	        		width: 288px;
+	        		height: 191px;
+	        		padding: 10px;
+	        		margin-right: 16px;
+	        		background-image: url(img/box4-2-1.png);
+	        		background-size:100% auto ;
+	        	}
+	        	.box4-2-2 div
+	        	{
+	        		position: relative;
+	        		margin: 2px auto auto auto;
+	        		width: 280px;
+	        		height: 140px;
+	        		
+	        		border:2px solid #E8d7b9;
+	        		background-image: url(img/box4-2-3.jpg);
+	        	}
+	        	.box4-2-2 div a
+	        	{
+	        		position: relative;
+	        		display: block;
+	        		width: 280px;
+	        		height: 140px;
+	        		z-index: 4;
+	        	}
+	        	.box4-2-2 div:hover 
+	        	{
+	        		border:2px solid greenyellow;
+	        	}
+	        	.box4-2-2 p
+	        	{
+	        		position: relative;
+	        		margin: 0 auto;
+	        		margin-top: 8px;
+	        		
+	        		width: 288px;
+	        		line-height: 44px;
+	        		
+	        		font-size: 16px;
+	        		color: black;
+	        		font-weight: 700;
+	        		text-align: center;
+	        	}
+	        	.box4-3
+	        	{
+	        		position: relative;
+	        		margin: 0 auto;
+	        		width: 630px;
+	        	}
+	        	.box4-3 .box4-3-1
+	        	{
+	        		position: relative;
+	        		margin: 0 auto;
+	        		width: 630px;
+	        		height: 176px;
+	        		border-top:1px solid #DFDBA8;
+	        		border-bottom: 1px solid #DBC497;
+	        		
+	        	}
+	        	.box4-3 .box4-3-1:hover
+	        	{
+	        	 	background-image:url(img/box4-3-1.png);
+	        	}
+	        	.box4-3-1>div
+	        	{
+	        		/*position: relative;*/
+	        		margin-top: 45px;
+	        		width: 620px;
+	        		height: 100px;
+	        		/*background-color: rgba(0,0,0,.5);*/
+	        	}
+	        	.box4-3-1>div:hover div
+	        	{
+	        		border: none;
+	        		background-color: #76b900;
+	        		padding: 1.5px;
+	        	}
+	        	.box4-3-1>div>div
+	        	{
+	        		position: absolute;
+	        		width: 200px;
+	        		height: 100px;
+	        		border: 1px solid #b7894e;
+	        		padding: .5px;
+	        		background-color: #fee0b9;
+	        		background-image: url(img/box4-3-2.jpg);
+	        		background-size: 198px 98px;
+	        		background-repeat: no-repeat;
+	        		background-position: 50% 50%;
+	        	}
+	        	.box4-3-1>div h4
+	        	{
+	        		float: right;
+	        		margin-top: 0px;
+	        		padding-bottom: 10px;
+	        		width: 398px;
+	        		line-height: 31px;
+	        		color: #150603;
+	        		font-size: 16px;
+	        		font-weight: 700;
+	        		/*background-color: rosybrown;*/
+	        	}
+	        	.box4-3-1>div p:nth-of-type(1)
+	        	{
+	        		float: right;
+	        		margin-top: -30px;
+	        		width: 398px;
+	        		/*line-height: 38px;*/
+	        		color: #695745;
+	        		/*background-color: rosybrown;*/
+	        	}
+	        	.box4-3-1>div p:nth-of-type(2)
+	        	{
+	        		position: absolute;
+	        		width: 130px;
+	        		bottom:0px ;
+	        		left: 223px;
+	        		/*background-color:goldenrod;*/
+	        	}
+	        	.box4-3-1>div p:nth-of-type(2) a
+	        	{
+	        		display: block;
+	        		float: left;
+	        		width: 23px;
+	        		height: 23px;
+	        		background-image: url(img/box4-3-3.png);
+	        		background-position: -310px -277px;
+	        		/*background-color: black;*/
+	        	}
+	        	.box4-3-1>div p:nth-of-type(2) span
+	        	{
+	        		float: right;
+	        		margin-left: 10px;
+	        		color: #666;
+	        	}
+	        	.box4-4
+	        	{
+	        		margin: 0 auto;
+	        		width: 640px;
+	        		height: 88px;
+	        		border-top: 1px solid #efdba8;
+	        	}
+	        	.box4-4 a
+	        	{
+	        		display: inline-block;
+	        		width: 100%;
+	        		height: 40px;
+	        		line-height: 40px;
+	        		margin-top: 15px;
+	        		border: 1px solid #f1dbb8;
+	        		text-align: center;
+	        		color: #000000;
+	        		background:#d3b78b url(img/box4-3-4.png) no-repeat 370px 50%;
+	        		
+	        	}
+	        	.box4-4>a:hover
+	        	{
+	        		background:#c3a473 url(img/box4-3-4.png) no-repeat 370px 50%;
+	        	}
+	        </style>
+			<style type="text/css" id="bigbox5">
+				.box5-1
+				{
+					position: relative;
+					width:328px;
+					padding: 579px 0 10px 0;
+					
+					background-image:url(img/box5-1-1.jpg) ;
+					background-repeat:no-repeat ;
+					background-size:100% 100% ;
+				}
+				.box5-1-1
+				{
+					position: absolute;
+					top: 1px;
+					left: -6px;
+					
+					width: 353px;
+					height: 192px;
+					
+					overflow: hidden;
+					background-image: url(img/box5-1-2.png);
+					background-repeat: no-repeat;
+					background-size: 100% 100%;
+				}
+				.box5-1-2
+				{
+					position: absolute;
+					top: 120px;
+					left: 18px;
+					width: 297px;
+					height: 228px;
+					padding-top: 80px;
+					
+					/*background-color: rgba(0,0,0,.5);*/
+				}
+				.box5-1-2 ul
+				{
+					padding: 20px 0 0 36px;
+					height: 85px;
+					list-style: none;
+					
+					/*background-color: rgba(225,0,0,.5);*/
+				}
+				.box5-1-2 ul li
+				{
+					float: left;
+					width: 80px;
+					height: 90px;
+					background-image: url(img/box5-1-3.png);
+				}
+				.box5-1-2 ul li:nth-of-type(1){background-image: url(img/box5-1-3.png);background-position: 0 -182px;}
+				.box5-1-2 ul li:nth-of-type(2){background-image: url(img/box5-1-3.png);background-position: -80px 0;}
+				.box5-1-2 ul li:nth-of-type(3){background-image: url(img/box5-1-3.png);background-position: -160px 0;}
+				.box5-1-2 ul li:nth-of-type(2):hover{background-position: -80px -89px;}
+				.box5-1-2 ul li:nth-of-type(3):hover{background-position: -160px -89px;}
+				.box5-1 .box5-1-2 a
+				{
+					display: block;
+					position: absolute;
+					top: 206px;
+					left: 43px;
+					width: 220px;
+					height: 61px;
+					
+					background-image: url(img/box5-1-5.png);
+					background-position:-35px 492px;
+				}
+				.box5-2,.box5-3,.box5-4,.box5-5
+				{
+					position: relative;
+					/*background-color: rgba(255,0,0,.5);*/
+					
+					
+				}
+				.box5-2-1,.box5-3-1,.box5-4-1,.box5-5-1,.box5-7-1
+				{
+					position: relative;
+					margin: 0 auto;
+					width: 265px;
+					min-height: 80px;
+					padding: 30px 20px;
+					background-image:url(img/box5-2-1.jpg) ;
+					background-position: 0px 0px;
+					background-repeat: no-repeat;
+				}
+				.box5-2-1 h4,.box5-3-1 h4,.box5-4-1 h4,.box5-5-1 h4,.box5-7-1 h4
+				{
+					position: relative;
+					top: -10px;
+					font-size: 16px;
+					font-weight: 700;
+					color: #033456;
+					height: 30px;
+					line-height: 30px;
+					/*background-color: rgba(0,0,0,.5);*/
+				}
+				.box5-2-1 h4 div,.box5-3-1 h4 div,.box5-4-1 h4 div,.box5-5-1 h4 div,.box5-7-1 h4 div
+				{
+					position: relative;
+					margin-right: 5px;
+					float: left;
+					vertical-align: middle;
+					width: 30px;
+					height: 30px;
+					
+					background-image: url(img/box4-3-3.png);
+				
+				}
+				.box5-2-1 h4 div{background-position: -87px -4px;}
+				.box5-3-1 h4 div{background-position: -87px -4px;}
+				.box5-4-1 h4 div{background-position: -46px -74px;}
+				.box5-5-1 h4 div{background-position: -87px -39px;}
+				.box5-7-1 h4 div{background-position: -4px -189px;}
+				.box5-2-1 h4 span
+				{
+					line-height: 30px;
+				}
+				.box5-2-1:nth-of-type(1)>div
+				{
+					position: relative;
+					margin: -25px auto auto auto;
+					
+					width: 244px;
+					height: 155px;
+				}
+				.box5-2-1>div:hover div:nth-of-type(2){transform: scale(1.3,1.3);}
+				.box5-2-1>div:hover div:nth-of-type(1){filter: brightness(80%);}
+				.box5-2-1>div div:nth-of-type(1)
+				{
+					margin-top:0px;
+					width: 244px;
+					height: 124px;
+					background-image: url(img/box5-2-2.png);
+					background-size:100% 100% ;
+					transition: all .5s;
+				}
+				.box5-2-1>div div:nth-of-type(2)
+				{
+					position: absolute;
+					top: 0px;
+					left: 0px;
+					width: 244px;
+					height: 124px;
+					background-image: url(img/box5-2-3.png);
+					background-size: 100% 100%;
+					transition: all .5s;
+					z-index: 4;
+				}
+				.box5-2-1>div p
+				{
+					margin-top: 0px;
+					font-size: 16px;
+					color: #251c0f;
+					font-weight: 700;
+					text-align: center;
+					line-height: 31px;
+					
+					/*background-color: rgba(0,0,0,.5);*/
+				}
+				.box5-3-1>div
+				{
+					position: relative;
+					margin: -25px auto 10px auto;
+					width: 260px;
+					height: 117px;
+					background-image: url(img/box5-2-4.jpg);
+					box-shadow: 0 0 1px #000;
+					background-size: 100% 100%;
+				}
+				.box5-4-1>div
+				{
+					position: relative;
+					margin: -30px auto 30px auto;
+					height: 116px;
+					width: 265px;
+				}
+				.box5-4-1>div ul
+				{
+					position: relative;
+					margin: 0 auto;
+					height: 116px;
+					width: 265px;
+				}
+				.box5-4-1>div ul li
+				{
+					display: block;
+					margin: 0 auto;
+					padding: 10px 0px;
+					line-height: 12px;
+					width: 265px;
+					height: 12px;
+					font-size: 12px;
+					/*color: #5b4b38;*/
+					border-bottom: 1px solid #e8d6a8;
+				}
+				.box5-4-1>div ul li a:hover
+				{
+					color: #db6800;
+				}
+				.box5-4-1>div ul li a:hover span:nth-of-type(1)
+				{
+					background-position: -135px -113px;
+				}
+				.box5-4-1>div ul li a
+				{
+					display: block;
+					line-height: 12px;
+					width: 265px;
+					font-size: 12px;
+					color: #5b4b38;
+				}
+				.box5-4-1>div ul li a span:nth-of-type(1)
+				{
+					display: block;
+					position: relative;
+					top: 3px;
+					float: left;
+					width: 12px;
+					height: 10px;
+					background-image: url(img/box4-3-3.png);
+					background-position: -135px -143px;
+				}
+				.box5-4-1>a
+				{
+					display: block;
+					width: 43px;
+					height: 15px;
+					float:right;
+					background-image: url(img/box5-3-1.png);
+					background-size: 100% 100%;
+					/*background-color: red;*/
+				}
+				
+				
+				
+				
+				
+				.box5-5-1>div
+				{
+					position: relative;
+					margin: -30px auto 30px auto;
+					height: 145px;
+					width: 265px;
+				}
+				.box5-5-1>div ul
+				{
+					position: relative;
+					margin: 0 auto;
+					height: 145px;
+					width: 265px;
+				}
+				.box5-5-1>div ul li
+				{
+					display: block;
+					margin: 0 auto;
+					padding: 10px 0px;
+					line-height: 12px;
+					width: 265px;
+					height: 12px;
+					font-size: 12px;
+					/*color: #5b4b38;*/
+					border-bottom: 1px solid #e8d6a8;
+				}
+				.box5-5-1>div ul li a:hover
+				{
+					color: #db6800;
+				}
+				.box5-5-1>div ul li a:hover span:nth-of-type(1)
+				{
+					background-position: -135px -113px;
+				}
+				.box5-5-1>div ul li a
+				{
+					display: block;
+					line-height: 12px;
+					width: 265px;
+					font-size: 12px;
+					color: #5b4b38;
+				}
+				.box5-5-1>div ul li a span:nth-of-type(1)
+				{
+					display: block;
+					position: relative;
+					top: 3px;
+					float: left;
+					width: 12px;
+					height: 10px;
+					background-image: url(img/box4-3-3.png);
+					background-position: -135px -143px;
+				}
+				.box5-5-1>a
+				{
+					display: block;
+					width: 43px;
+					height: 15px;
+					float:right;
+					background-image: url(img/box5-3-1.png);
+					background-size: 100% 100%;
+					/*background-color: red;*/
+				}
+				
+				.box5-6
+				{
+					position: relative;
+					margin: 0 auto 20px;
+					width: 260px;
+				}
+				.box5-6-1
+				{
+					position: relative;
+					width: 100%;
+					height: 55px;
+					/*padding: 20px auto;*/
+					margin: 10px auto;
+					border: 1px solid #efd4ad;
+					background-color: #d1b181;
+				}
+				.box5-6-1 span
+				{
+					position: absolute;
+					top: 18px;
+					left: 18px;
+					color: #251C0F;
+					font-size: 15px;
+					font-weight: 700;
+				}
+				.box5-6-1 a
+				{
+				    position: absolute;
+				    top: -10px;
+				    display: block;
+				    width: 260px;
+				    height: 66px;
+				    background-image: url(img/AI.png);
+				    background-position: 175px -279px;
+				    background-repeat: no-repeat;
+				    /*background-color: rgba(0,0,0,.5);*/
+				}
+				.box5-6-1 a:hover
+				{
+					background-position: 175px -377px;
+				}
+				
+				
+				.box5-7-2
+				{
+					position: relative;
+					padding-left: 10px;
+					width: 265px;
+					margin: 20px auto 20px auto;
+					/*background-color: rgba(225,0,0,.5);*/
+				}
+				.box5-7-2>div
+				{
+					position: relative;
+					margin-top: 20px;
+					height: 42px;
+					width: 265px;
+					
+					/*background-color: rgba(0,0,0,.5);*/
+				}
+				.box5-7-2>div .left5
+				{
+					position: relative;
+					float: left;
+					width: 135px;
+					height: 42px;
+					
+					/*background-color: rgba(225,0,0,.5);*/
+				}
+				.box5-7-2>div:nth-of-type(1) .left5>div:nth-of-type(1)
+				{
+					position: relative;
+					width: 35px;
+					height: 42px;
+					float: left;
+					background-image: url(img/box5-7-1.png);
+					background-position: -378px 0px;
+					/*background-color: beige;*/
+				}
+				.box5-7-2>div:nth-of-type(1) .left5>div:nth-of-type(2)
+				{
+					position: relative;
+					width: 90px;
+					height: 42px;
+					float: right;
+					
+					border-right: 1px dotted black;
+					/*background-color: green;*/
+				}
+				.box5-7-2>div:nth-of-type(1) .left5>div:nth-of-type(2) a
+				{
+					display: block;
+					margin-top: 0px;
+					font-size: 14px;
+					line-height: 18px;
+					cursor:pointer;
+				}
+				.box5-7-2>div:nth-of-type(1) .left5>div:nth-of-type(2) a:nth-of-type(1){color: #3D8403;}
+				.box5-7-2>div:nth-of-type(1) .left5>div:nth-of-type(2) a:nth-of-type(1) span{color: black;}
+				.box5-7-2>div:nth-of-type(1) .left5>div:nth-of-type(2) a:nth-of-type(1):hover span {color: #3D8403;}
+				
+				.box5-7-2>div:nth-of-type(1) .left5>div:nth-of-type(2) a:nth-of-type(2){color: #F0834F;}
+				.box5-7-2>div:nth-of-type(1) .left5>div:nth-of-type(2) a:nth-of-type(2) span{color: black;}
+				.box5-7-2>div:nth-of-type(1) .left5>div:nth-of-type(2) a:nth-of-type(2):hover span {color: #F0834F;}
+			
+				.box5-7-2>div .right5
+				{
+					position: relative;
+					float: right;
+					width: 120px;
+					height: 42px;
+					
+					/*background-color: rgba(225,0,0,.5);*/
+				}
+				.box5-7-2>div:nth-of-type(1) .right5>div:nth-of-type(1)
+				{
+					position: relative;
+					
+					width: 35px;
+					height: 42px;
+					float:left;
+					background-image: url(img/box5-7-1.png);
+					background-position: -210px 2px;
+					transition: all .1s; 
+					/*background-color: beige;*/
+				}
+				.box5-7-2>div:nth-of-type(1) .right5>div:nth-of-type(2)
+				{
+					float: right;
+					position: relative;
+					margin-right: 15px;
+					height: 42px;
+					/*background-color: green;*/
+				}
+				.box5-7-2>div:nth-of-type(1) .right5>div:nth-of-type(2) a
+				{
+					position: relative;
+					top:15px;
+					display: block;
+					height:17px ;
+					font-size: 14px;
+					color: black;
+					/*background-color: red;*/
+				}
+				.box5-7-2>div:nth-of-type(1) .right5:hover>div:nth-of-type(2) a{color:#F0834F ;}
+				.box5-7-2>div:nth-of-type(1) .right5:hover>div:nth-of-type(1){background-position: -210px -57px;}
+				
+				.box5-7-2>div:nth-of-type(2) .left5>div:nth-of-type(1)
+				{
+					position: relative;
+					
+					width: 35px;
+					height: 42px;
+					float:left;
+					background-image: url(img/box5-7-1.png);
+					background-position: -463px 2px;
+					transition: all .1s; 
+					/*background-color: beige;*/
+				}
+				.box5-7-2>div:nth-of-type(2) .left5>div:nth-of-type(2)
+				{
+					float: right;
+					position: relative;
+					margin-right: 15px;
+					height: 42px;
+					/*background-color: green;*/
+				}
+				.box5-7-2>div:nth-of-type(2) .left5>div:nth-of-type(2) a
+				{
+					position: relative;
+					top:15px;
+					display: block;
+					height:17px ;
+					font-size: 14px;
+					color: black;
+					/*background-color: red;*/
+				}
+				.box5-7-2>div:nth-of-type(2) .left5:hover>div:nth-of-type(2) a{color:#F0834F ;}
+				.box5-7-2>div:nth-of-type(2) .left5:hover>div:nth-of-type(1){background-position: -463px -57px;}
+				
+				.box5-7-2>div:nth-of-type(3) .left5
+				{
+					position: relative;
+					float: left;
+					width: 148px;
+					height: 48px;
+					border-right:1px dotted black ;
+					/*background-color: royalblue;*/
+				}
+				.box5-7-2>div:nth-of-type(3) .left5 div:nth-of-type(1)
+				{
+					position: relative;
+					top: 0px;
+					height: 16px;
+					font-size: 14px;
+					font-weight: 700;
+					/*background-color: red;*/
+				}
+				.box5-7-2>div:nth-of-type(3) .left5 div:nth-of-type(2)
+				{
+					position: relative;
+					
+					margin-top:10px ;
+					height: 16px;
+					font-size: 12px;
+					font-weight: 400;
+					/*background-color: red;*/
+				}
+				.box5-7-2>div:nth-of-type(3) .left5 div:nth-of-type(2):hover{color:  #F0834F;}
+				.box5-7-2>div:nth-of-type(3) .right5
+				{
+					position: relative;
+					float: right;
+					width: 100px;
+					height: 48px;
+					/*background-color: royalblue;*/
+				}
+				.box5-7-2>div:nth-of-type(3) .right5 div:nth-of-type(1)
+				{
+					position: relative;
+					top: 0px;
+					height: 16px;
+					font-size: 14px;
+					font-weight: 700;
+					/*background-color: red;*/
+				}
+				.box5-7-2>div:nth-of-type(3) .right5 div:nth-of-type(2)
+				{
+					position: relative;
+					
+					margin-top:10px ;
+					height: 16px;
+					font-size: 12px;
+					font-weight: 400;
+					/*background-color: red;*/
+				}
+				.box5-8
+				{
+					position: absolute;
+					bottom: -20px;
+					width: 100%;
+					height: 20px;
+					background-image: url(img/box5end.png);
+					background-repeat: no-repeat;
+					background-size: 100% 100%;
+					/*background-color: red;*/
+					
+				}
+			</style>
+			<style type="text/css" id="bigbox7">
+				.bigbox7
+				{
+					position: relative;
+					width: 100%;
+					min-width: 1200px;
+					height: 471px;
+					background-image: url(img/box8-1-1.jpg);
+					background-size: 100% 100%;
+				}
+				.box7-1
+				{
+					position: absolute;
+					top: -30px;
+					left: 50%;
+					margin-left: -175px;
+					
+					width: 349px;
+					height: 87px;
+					background-image: url(img/box7-2.png);
+					background-size: 100% 100%;
+					z-index: 3;
+				}
+				.box7-1 a
+				{
+					position: relative;
+					display: block;
+					margin: 7px auto auto auto;
+					width: 249px;
+					height: 80px;
+					
+					background-image: url(img/box7-11.png);
+					background-position: 0 0;
+					z-index: 3;
+					/*background-color: red;*/
+				}
+				.box7-1 a:hover
+				{
+					background-position: 0 -84px;
+				}
+				.box7-2
+				{
+					position: relative;
+					margin: 0 auto;
+					width: 1000px;
+					padding-top: 79px;
+					font-size: 14px;
+					color: #FFFFFF;
+					/*background-color: red;*/
+				}
+				.box7-2 .left7
+				{
+					float: left;
+					font-size: 14px;
+					height: 20px;
+				}
+				.box7-2 .left7 div
+				{
+					float: left;
+					margin-right: 37px;
+				}
+				.box7-2 .left7 div a
+				{
+					float: left;
+					display: block;
+					width: 19px;
+					height: 19px;
+					background-image: url(img/box7-3.png);
+				}
+				.box7-2 .left7 div:nth-of-type(1) a{background-position: -7px -7px;}
+				.box7-2 .left7 div:nth-of-type(2) a{background-position: -36px -8px;}
+				.box7-2 .left7 div:nth-of-type(3) a{background-position: -8px -32px;}
+				.box7-2 .right7
+				{
+					float: right;
+					font-size: 14px;
+					height: 20px;
+				}
+				.box7-2 .right7>div span
+				{
+					margin-left: 10px;
+					float: left;
+					height: 20px;
+				}
+				.box7-2 .right7>div span:nth-of-type(3)
+				{
+					position: relative;
+					display: block;
+					width: 48px;
+					height: 16px;
+					/*background-color: red*/
+					cursor: pointer;
+				}
+				.box7-2 .right7>div span:nth-of-type(3) div:nth-of-type(1)
+				{
+					position: relative;
+					margin: 0 auto;
+					width: 16px;
+					height: 16px;
+					
+					background-color: #ac771f;
+					border-left:7px solid #241101;
+					border-right:7px solid #241101;
+					border-top:2px solid #241101;
+					border-bottom:2px solid #241101;
+					box-sizing: border-box;
+				}
+				.box7-2 .right7>div span:nth-of-type(3) div:nth-of-type(2)
+				{
+					position: absolute;
+					/*margin: 0 auto;*/
+					top: 7px;
+					left: 18px;
+					width: 12px;
+					height: 2px;
+					
+					background-color: #ac771f;
+					box-sizing: border-box;
+				}
+				.box7-2 .right7>div span:nth-of-type(5)
+				{
+					position: relative;
+					margin-left: 10px;
+					margin-top: 3px;
+					display: block;
+					width: 14px;
+					height: 14px;
+					background-color: #241101;
+					cursor: pointer;
+					overflow: hidden;
+				}
+				.box7-2 .right7>div span:nth-of-type(5) div:nth-of-type(1)
+				{
+					position: relative;
+					top: 2px;
+					left: 3.5px;
+					display: block;
+					width: 12.2px;
+					height: 12.2px;
+					-webkit-transform: rotate(45deg);
+					transform: rotate(45deg);
+					transform-origin: 100% 0 0;
+					cursor: pointer;
+					background-color: #AC771F;
+				}
+				.box7-2 .right7>div span:nth-of-type(5) div:nth-of-type(2)
+				{
+					position: absolute;
+					top: 0px;
+					left: 0px;
+					width: 14px;
+					height: 6px;
+					cursor: pointer;
+					background-color: #241101;
+				}
+				.box7-2 .right7>div a
+				{
+					display: block;
+					background-image: url(img/box7-4.png);
+					width: 95px;
+					height: 25px;
+					background-position: -349px -2px;
+					/*background-color: red;*/
+				}
+				.box7-3
+				{
+					position: relative;
+					margin: 80px auto 8px;
+					width: 1000px;
+					
+				}
+				.box7-3 .left7-3
+				{
+					position: relative;
+					float: left;
+					width: 265px;
+					height: 85px;
+					/*padding-top: 40px;*/
+					/*background-color: red;*/
+				}
+				.box7-3 .left7-3 a:nth-of-type(1)
+				{
+					position: relative;
+					float: left;
+					display: block;
+					width: 140px;
+					height: 85px;
+					background-image: url(img/box7-5.png);
+					/*background-size: 100% 100%;*/
+					/*background-color:green;*/
+					vertical-align: top;
+				}
+				.box7-3 .left7-3 a:nth-of-type(2)
+				{
+					position: relative;
+					margin-top: 47px;
+					float: left;
+					display: block;
+					width: 125px;
+					height: 38px;
+					background-image: url(img/box7-6.png);
+					background-size: 100% auto;
+					/*background-color:green;*/
+					vertical-align: top;
+				}
+				.box7-3 .right7-3
+				{
+					width: 706px;
+					height: 140px;
+				    float: right;
+				    text-align: left;
+				    padding: 0 0 0 73px;
+				    vertical-align: middle;
+				    position: relative;
+				    box-sizing: border-box;
+				    
+				    /*background-color: red;*/
+				}
+				.box7-3 .right7-3>span:nth-of-type(1)
+				{
+					position: relative;
+					display: block;
+					float: right;
+					width: 643px;
+					height: 31px;
+					color: #ac771f;
+					/*background-color: green;*/
+				}
+				.box7-3 .right7-3>span:nth-of-type(1) a
+				{
+					color: #ccc;
+				    padding: 0 10px;
+				    font-size: 14px;
+				    
+				   
+				}
+				.box7-3 .right7-3 span:nth-of-type(2)
+				{
+					position: relative;
+					width: 633px;
+					height: 60px;
+					
+				}
+				.box7-3 .right7-3 span:nth-of-type(2) p
+				{
+					font-size: 12px;
+				    margin: 0;
+				    line-height: 20px;
+				    font-weight: 400;
+				    color: #552c09;
+				}
+				.box7-3 .right7-3 span:nth-of-type(2) p a:hover,
+				.box7-3 .right7-3 span:nth-of-type(3) div:nth-of-type(2) span a:hover
+				{
+					color: #FFFFFF;
+					cursor: pointer;
+				} 
+				.box7-3 .right7-3>span:nth-of-type(3)
+				{
+					position: relative;
+					float: right;
+					display: block;
+					width: 640px;
+					height: 49px;
+					/*background-color: green;*/
+				}
+				.box7-3 .right7-3 span:nth-of-type(3) div:nth-of-type(1)
+				{
+					position: relative;
+					float: left;
+					width: 108px;
+					height: 49px;
+					/*background-color: wheat;*/
+				}
+				.box7-3 .right7-3 span:nth-of-type(3) div:nth-of-type(1) a
+				{
+					position: relative;
+					top: 5px;
+					display: block;
+					float: left;
+					width: 25px;
+					height: 28px;
+					margin-left: 2px;
+					background-repeat: no-repeat;
+				}
+				.box7-3 .right7-3 span:nth-of-type(3) div:nth-of-type(1) a:nth-of-type(1){background-image: url(img/box7-7.png);}
+				.box7-3 .right7-3 span:nth-of-type(3) div:nth-of-type(1) a:nth-of-type(2){background-image: url(img/box7-8.png);}
+				.box7-3 .right7-3 span:nth-of-type(3) div:nth-of-type(1) a:nth-of-type(3){background-image: url(img/box7-9.png);}
+				.box7-3 .right7-3 span:nth-of-type(3) div:nth-of-type(1) a:nth-of-type(4){background-image: url(img/box7-0.png);}
+				.box7-3 .right7-3 span:nth-of-type(3) div:nth-of-type(2)
+				{
+					position: relative;
+					margin-top: 10px;
+					margin-left: 10px;
+					float: left;
+					width: 290px;
+					height: 39px;
+					/*background-color: white;*/
+				}
+				.box7-3 .right7-3 span:nth-of-type(3) div:nth-of-type(2) span
+				{
+					font-size: 12px;
+				    
+				    line-height: 20px;
+				    font-weight: 400;
+				    color: #552c09;
+				}
+			</style>	
+			<style type="text/css" id="bigbox8">
+				.bigbox8
+				{
+					position:fixed;
+					right: 5px;
+					bottom: 115px;
+					height:285px;
+					width: 85px;
+				}
+				.bigbox8 .box8-1,.box8-2,.box8-3
+				{
+					position: absolute;
+					left: 0px;
+					
+					height: 85px;
+					width: 85px;
+					border-radius: 50%;
+					background-color: rgba(96,52,18,.6);
+					cursor: pointer;
+				}
+				.bigbox8 .box8-1{bottom: 200px;background-image: url(img/box8-1.png); transition: all .3s;}
+				.bigbox8 .box8-2{bottom:110px;background-image: url(img/box8-4.png);background-position-x: 3px;}
+				.bigbox8 .box8-3{bottom: 20px; background-image: url(img/box8-3.png);background-position-x: 3px;}
+				.bigbox8 .box8-1:hover{background-image: url(img/box8-2.png);transform: rotateY(180deg);}
+			</style>
+	        
+	</head>
+	<body>
+		<div class="background"></div>
+		<div class="bigbox1">
+			<div class="box1-1">
+				<div class="left1">
+					<ul>
+						<li><a>战网</a></li>
+						<li>
+							<a href="">游戏</a>
+							<div class="box1-2">
+								<div>
+									<div><a></a></div>
+									<div><a></a></div>
+									<div><a></a></div>
+									<div><a></a></div>
+									<div><a></a></div>
+									<div><a></a></div>
+								</div>
+							</div>
+						</li>
+						<div></div>
+						<li><a href="">商城</a></li>
+						<li><a href="">新闻</a></li>
+						<li>
+							<a href="">电子竞技</a>
+							<div class="box1-3">
+								<div class="box1-3-1">
+									<div>
+								        <div><a href=""></a></div>
+										<p>守望先锋电竞</p>
+									</div>
+									<div>
+										<div><a href=""></a></div>
+										<div><a href=""></a></div>
+										<div><a href=""></a></div>
+									</div>
+									<div>
+										<div><a href=""></a></div>
+										<p>炉石传说黄金系列赛</p>
+									</div>
+									<div>
+										<div><a href=""></a></div>
+										<p>HGC黄金风暴联赛</p>
+									</div>
+									<div>
+										<div><a href=""></a></div>
+										<p>星际争霸II黄金职业联赛</p>
+									</div>
+									<div>
+										<div><a href=""></a></div>
+										<p>魔兽争霸III黄金联赛</p>
+									</div>
+								</div>
+								<div class="box1-3-2">
+									
+									<div>
+										<svg>
+											<rect x="2"   y="2" width="3" height="3" style="fill: dodgerblue;"></rect>
+											<rect x="2"   y="6.5" width="3" height="3" style="fill: dodgerblue;"></rect>
+											<rect x="2"   y="11" width="3" height="3" style="fill: dodgerblue;"></rect>
+											<rect x="6.5" y="2" width="3" height="3" style="fill: dodgerblue;"></rect>
+										    <rect x="6.5" y="6.5" width="3" height="3" style="fill: dodgerblue;"></rect>
+											<rect x="6.5" y="11" width="3" height="3" style="fill: dodgerblue;"></rect>
+											<rect x="11"  y="2" width="3" height="3" style="fill: dodgerblue;"></rect>
+											<rect x="11"  y="6.5" width="3" height="3" style="fill: dodgerblue;"></rect>
+											<rect x="11"  y="11" width="3" height="3" style="fill: dodgerblue;"></rect>
+									    </svg>
+										<a href="">更多赛事</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<div></div>
+					</ul>
+				</div>
+				<div class="right1">
+					<ul>
+						<li><a href="">你的通行证</a></li>
+						<li>
+							<a href="">支持</a>
+							<div class="box1-3">
+								<div>
+									<div></div>
+									<div></div>
+									<div></div>
+									<div></div>
+									<div></div>
+									<div></div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	    <div class="bigbox2">
+	    	<div class="box2-1"></div>
+	    	<div class="box2-2">
+	    		<form action="" method="post">
+		    		<input type="text" name="" id="" value="" />
+		    		<input type="submit" name="" id="" value="" />
+	    		</form>
+	    	</div>
+	    	
+	    </div>
+	    <div class="box2-3">
+	    		<ul>
+	    			<li>
+	    				<a href=""></a>
+	    			</li>
+	    			<li>
+	    				<a href=""></a>
+	    				<div>
+	    					<div><a href="">最新</a></div>
+	    					<div><a href="">博文</a></div>
+	    					<div><a href="">赛事</a></div>
+	    					<div><a href="">活动</a></div>
+	    					<div><a href="">媒体</a></div>
+	    				</div>
+	    			</li>
+	    			<li>
+	    				<a href=""></a>
+	    				<div>
+	    					<div><a href="">版本</a></div>
+	    					<div><a href="">基础知识</a></div>
+	    					<div><a href="">炉石大事件</a></div>
+	    				</div>
+	    			</li>
+	    			<li>
+	    				<a href=""></a>
+	    				<div>
+	    					<div><a href="">视频</a></div>
+	    					<div><a href="">截图</a></div>
+	    					<div><a href="">壁纸</a></div>
+	    				</div>
+	    			</li>
+	    			<li>
+	    				<a href=""></a>
+	    				<div></div>
+	    			</li>
+	    			<li>
+	    				<a href=""></a>
+	    				<div></div>
+	    			</li>
+	    			<li>
+	    				<a href=""></a>
+	    				<div>
+	    					<div><a href="">积分排名</a></div>
+	    				</div>
+	    			</li>
+	    			<li>
+	    				<a href=""></a>
+	    				<div></div>
+	    			</li>
+	    			<li class="box2-3fl"></li>
+	    			<li class="box2-3fr"></li>
+	    		</ul>
+	    	</div>
+	    <div class="bigbox3">
+	    	<div class="bigbox4">
+	    		<div class="box4-1">
+	    			<div class="box4-1-1"></div>
+	    			<div class="box4-1-2">
+	    				<div class="left4-1">
+	    					<p>全新扩展包"砰砰计划"现已公布</p>
+	    				</div>
+	    				<div class="right4-1">
+	    					<a href=""></a>
+	    				</div>
+	    			</div>
+	    		</div>
+	    		<div class="box4-2">
+	    			<div class="box4-2-1">
+	    				<div><a href=""></a></div>
+	    				<p>"砰砰计划"已公布卡牌一览</p>
+	    			</div>
+	    			<div class="box4-2-2">
+	    				<div><a href=""></a></div>
+	    				<p>预购"砰砰计划"奥术之尘礼包</p>
+	    			</div>
+	    		</div>
+	    		<div class="box4-3">
+	    			<div class="box4-3-1">
+	    				<div>
+		    				<div><a href=""></a></div>
+		    				<h4>《暴雪铁人游戏五项》第二季落幕 牌面对夺冠</h4>
+		    				<p>
+		    					代替小闲参赛的Q酱与TIME、
+		    					小伟、桥林、No总组成
+		    					的牌面队获得了第二季冠军
+		    				</p>
+		    				<p>
+		    					<a href=""></a>
+		    					<span >2018-08-05</span>
+		    				</p>
+	    				</div>
+	    			</div>
+	    		</div>
+	    		<div class="box4-3">
+	    			<div class="box4-3-1">
+	    				<div>
+		    				<div><a href=""></a></div>
+		    				<h4>《暴雪铁人游戏五项》第二季落幕 牌面对夺冠</h4>
+		    				<p>
+		    					代替小闲参赛的Q酱与TIME、
+		    					小伟、桥林、No总组成
+		    					的牌面队获得了第二季冠军
+		    				</p>
+		    				<p>
+		    					<a href=""></a>
+		    					<span >2018-08-05</span>
+		    				</p>
+	    				</div>
+	    			</div>
+	    		</div>
+	    		<div class="box4-3">
+	    			<div class="box4-3-1">
+	    				<div>
+		    				<div><a href=""></a></div>
+		    				<h4>《暴雪铁人游戏五项》第二季落幕 牌面对夺冠</h4>
+		    				<p>
+		    					代替小闲参赛的Q酱与TIME、
+		    					小伟、桥林、No总组成
+		    					的牌面队获得了第二季冠军
+		    				</p>
+		    				<p>
+		    					<a href=""></a>
+		    					<span >2018-08-05</span>
+		    				</p>
+	    				</div>
+	    			</div>
+	    		</div>
+	    		<div class="box4-3">
+	    			<div class="box4-3-1">
+	    				<div>
+		    				<div><a href=""></a></div>
+		    				<h4>《暴雪铁人游戏五项》第二季落幕 牌面对夺冠</h4>
+		    				<p>
+		    					代替小闲参赛的Q酱与TIME、
+		    					小伟、桥林、No总组成
+		    					的牌面队获得了第二季冠军
+		    				</p>
+		    				<p>
+		    					<a href=""></a>
+		    					<span >2018-08-05</span>
+		    				</p>
+	    				</div>
+	    			</div>
+	    		</div>
+	    		<div class="box4-3">
+	    			<div class="box4-3-1">
+	    				<div>
+		    				<div><a href=""></a></div>
+		    				<h4>《暴雪铁人游戏五项》第二季落幕 牌面对夺冠</h4>
+		    				<p>
+		    					代替小闲参赛的Q酱与TIME、
+		    					小伟、桥林、No总组成
+		    					的牌面队获得了第二季冠军
+		    				</p>
+		    				<p>
+		    					<a href=""></a>
+		    					<span >2018-08-05</span>
+		    				</p>
+	    				</div>
+	    			</div>
+	    		</div>
+	    		<div class="box4-3">
+	    			<div class="box4-3-1">
+	    				<div>
+		    				<div><a href=""></a></div>
+		    				<h4>《暴雪铁人游戏五项》第二季落幕 牌面对夺冠</h4>
+		    				<p>
+		    					代替小闲参赛的Q酱与TIME、
+		    					小伟、桥林、No总组成
+		    					的牌面队获得了第二季冠军
+		    				</p>
+		    				<p>
+		    					<a href=""></a>
+		    					<span >2018-08-05</span>
+		    				</p>
+	    				</div>
+	    			</div>
+	    		</div>
+	    		<div class="box4-3">
+	    			<div class="box4-3-1">
+	    				<div>
+		    				<div><a href=""></a></div>
+		    				<h4>《暴雪铁人游戏五项》第二季落幕 牌面对夺冠</h4>
+		    				<p>
+		    					代替小闲参赛的Q酱与TIME、
+		    					小伟、桥林、No总组成
+		    					的牌面队获得了第二季冠军
+		    				</p>
+		    				<p>
+		    					<a href=""></a>
+		    					<span >2018-08-05</span>
+		    				</p>
+	    				</div>
+	    			</div>
+	    		</div>
+	    		<div class="box4-3">
+	    			<div class="box4-3-1">
+	    				<div>
+		    				<div><a href=""></a></div>
+		    				<h4>《暴雪铁人游戏五项》第二季落幕 牌面对夺冠</h4>
+		    				<p>
+		    					代替小闲参赛的Q酱与TIME、
+		    					小伟、桥林、No总组成
+		    					的牌面队获得了第二季冠军
+		    				</p>
+		    				<p>
+		    					<a href=""></a>
+		    					<span >2018-08-05</span>
+		    				</p>
+	    				</div>
+	    			</div>
+	    		</div>
+	    		<div class="box4-3">
+	    			<div class="box4-3-1">
+	    				<div>
+		    				<div><a href=""></a></div>
+		    				<h4>《暴雪铁人游戏五项》第二季落幕 牌面对夺冠</h4>
+		    				<p>
+		    					代替小闲参赛的Q酱与TIME、
+		    					小伟、桥林、No总组成
+		    					的牌面队获得了第二季冠军
+		    				</p>
+		    				<p>
+		    					<a href=""></a>
+		    					<span >2018-08-05</span>
+		    				</p>
+	    				</div>
+	    			</div>
+	    		</div>
+	    		<div class="box4-3">
+	    			<div class="box4-3-1">
+	    				<div>
+		    				<div><a href=""></a></div>
+		    				<h4>《暴雪铁人游戏五项》第二季落幕 牌面对夺冠</h4>
+		    				<p>
+		    					代替小闲参赛的Q酱与TIME、
+		    					小伟、桥林、No总组成
+		    					的牌面队获得了第二季冠军
+		    				</p>
+		    				<p>
+		    					<a href=""></a>
+		    					<span >2018-08-05</span>
+		    				</p>
+	    				</div>
+	    			</div>
+	    		</div>
+	    		<div class="box4-3">
+	    			<div class="box4-3-1">
+	    				<div>
+		    				<div><a href=""></a></div>
+		    				<h4>《暴雪铁人游戏五项》第二季落幕 牌面对夺冠</h4>
+		    				<p>
+		    					代替小闲参赛的Q酱与TIME、
+		    					小伟、桥林、No总组成
+		    					的牌面队获得了第二季冠军
+		    				</p>
+		    				<p>
+		    					<a href=""></a>
+		    					<span >2018-08-05</span>
+		    				</p>
+	    				</div>
+	    			</div>
+	    		</div>
+	    		<div class="box4-3">
+	    			<div class="box4-3-1">
+	    				<div>
+		    				<div><a href=""></a></div>
+		    				<h4>《暴雪铁人游戏五项》第二季落幕 牌面对夺冠</h4>
+		    				<p>
+		    					代替小闲参赛的Q酱与TIME、
+		    					小伟、桥林、No总组成
+		    					的牌面队获得了第二季冠军
+		    				</p>
+		    				<p>
+		    					<a href=""></a>
+		    					<span >2018-08-05</span>
+		    				</p>
+	    				</div>
+	    			</div>
+	    		</div>
+	    		<div class="box4-3">
+	    			<div class="box4-3-1">
+	    				<div>
+		    				<div><a href=""></a></div>
+		    				<h4>《暴雪铁人游戏五项》第二季落幕 牌面对夺冠</h4>
+		    				<p>
+		    					代替小闲参赛的Q酱与TIME、
+		    					小伟、桥林、No总组成
+		    					的牌面队获得了第二季冠军
+		    				</p>
+		    				<p>
+		    					<a href=""></a>
+		    					<span >2018-08-05</span>
+		    				</p>
+	    				</div>
+	    			</div>
+	    		</div>
+	    		<div class="box4-4">
+	    			<a href="">更多新闻</a>
+	    		</div>
+	    	</div>
+	    	 <div class="bigbox6">
+	    		
+	    	</div>
+	    	<div class="bigbox5">
+	    		<div class="box5-1">
+	    			<div class="box5-1-1"></div>
+	    			<div class="box5-1-2">
+	    				<ul>
+	    					<li><a href=""></a></li>
+	    					<li><a href=""></a></li>
+	    					<li><a href=""></a></li>
+	    				</ul>
+	    				<a href=""></a>
+	    			</div>
+	    		</div>
+	    	    <div class="box5-2">
+	    	    	<div class="box5-2-1">
+	    	    		<h4><div></div><span>电竞赛事</span></h4>
+	    	    		<div>
+	    	    			<div>
+	    	    				<div></div>
+	    	    				<div></div>
+	    	    			</div>
+	    	    			<p>全民实力夏季赛</p>
+	    	    		</div>
+	    	    	</div>
+	    	    </div>
+	    	    <div class="box5-3">
+	    	    	<div class="box5-3-1">
+	    	    		<h4><div></div><span>游戏直播</span></h4>
+	    	    		<div>
+	    	    			
+	    	    		</div>
+	    	    	</div>
+	    	    </div>
+	    	    <div class="box5-4">
+	    	    	<div class="box5-4-1">
+	    	    		<h4><div></div><span>媒体推荐</span></h4>
+	    	    		<div>
+		    	    		<div>
+		    	    			<ul>
+		    	    				<li>
+		    	    					<a href="">
+		    	    						<span></span>
+		    	    						<span>【本周直播】《炉石传说》直播汇总</span>
+		    	    					</a>
+		    	    				</li>
+		    	    				<li>
+		    	    					<a href="">
+		    	    						<span></span>
+		    	    						<span>【活动】“女巫森林”社区媒体活动</span>
+		    	    					</a>
+		    	    				</li>
+		    	    				<li>
+		    	    					<a href="">
+		    	    						<span></span>
+		    	    						<span>【媒体推荐】主播点评“女巫森林”卡牌</span>
+		    	    					</a>
+		    	    				</li>
+		    	    				<li>
+		    	    					<a href="">
+		    	    						<span></span>
+		    	    						<span>【斗鱼】元旦特辑：九职业大作战</span>
+		    	    					</a>
+		    	    				</li>
+		    	    			</ul>
+		    	    		</div>
+		    	    	</div>
+	    	    		<a></a>
+	    	    	</div>
+	    	    </div>
+	    	    <div class="box5-5">
+	    	    	<div class="box5-5-1">
+	    	    		<h4><div></div><span>第三方赛事推荐</span></h4>
+	    	    		<div>
+		    	    		<div>
+		    	    			<ul>
+		    	    				<li>
+		    	    					<a href="">
+		    	    						<span></span>
+		    	    						<span>【本周直播】《炉石传说》直播汇总</span>
+		    	    					</a>
+		    	    				</li>
+		    	    				<li>
+		    	    					<a href="">
+		    	    						<span></span>
+		    	    						<span>【活动】“女巫森林”社区媒体活动</span>
+		    	    					</a>
+		    	    				</li>
+		    	    				<li>
+		    	    					<a href="">
+		    	    						<span></span>
+		    	    						<span>【媒体推荐】主播点评“女巫森林”卡牌</span>
+		    	    					</a>
+		    	    				</li>
+		    	    				<li>
+		    	    					<a href="">
+		    	    						<span></span>
+		    	    						<span>【斗鱼】元旦特辑：九职业大作战</span>
+		    	    					</a>
+		    	    				</li>
+		    	    					<li>
+		    	    					<a href="">
+		    	    						<span></span>
+		    	    						<span>【媒体推荐】主播点评“女巫森林”卡牌</span>
+		    	    					</a>
+		    	    				</li>
+		    	    			</ul>
+		    	    		</div>
+		    	    	</div>
+	    	    		<a></a>
+	    	    	</div>
+	    	    </div>
+	    		<div class="box5-6">
+	    			<div class="box5-6-1">
+	    				<span>充值指引</span>
+	    				<a href=""></a>
+	    			</div>
+	    			<div class="box5-6-1">
+	    				<span>充值指引</span>
+	    				<a href=""></a>
+	    			</div>
+	    			<div class="box5-6-1">
+	    				<span>充值指引</span>
+	    				<a href=""></a>
+	    			</div>
+	    			<div class="box5-6-1">
+	    				<span>充值指引</span>
+	    				<a href=""></a>
+	    			</div>
+	    			<div class="box5-6-1">
+	    				<span>充值指引</span>
+	    				<a href=""></a>
+	    			</div>
+	    			<div class="box5-6-1">
+	    				<span>充值指引</span>
+	    				<a href=""></a>
+	    			</div>
+	    			<div class="box5-6-1">
+	    				<span>充值指引</span>
+	    				<a href=""></a>
+	    			</div>
+	    			<div class="box5-6-1">
+	    				<span>充值指引</span>
+	    				<a href=""></a>
+	    			</div>
+	    		</div>
+	    	    <div class="box5-7">
+	    	    	<div class="box5-7-1">
+	    	    		<h4><div></div><span>互动社区</span></h4>
+	    	    		<div class="box5-7-2">
+		    	    		<div>
+		    	    			<div class="left5">
+		    	    				<div><a></a></div>
+		    	    				<div>
+		    	    					<a><span>微信</span>&nbsp;订阅号</a>
+		    	    					<a><span>微信</span>&nbsp;服务号</a>
+		    	    				</div>
+		    	    			</div>
+		    	    			<div class="right5">
+		    	    				<div><a></a></div>
+		    	    				<div>
+		    	    					<a href="">新浪微博</a>
+		    	    				</div>
+		    	    			</div>
+		    	    		</div>
+		    	    		<div>
+		    	    			<div class="left5">
+		    	    				<div><a></a></div>
+		    	    				<div>
+		    	    					<a>手机版官网</a>
+		    	    				</div>
+		    	    			</div>
+		    	    		</div>
+		    	    		<div>
+		    	    			<div class="left5">
+		    	    				<div><span>官方邮箱</span></div>
+		    	    				<div><a>hs@battlenet.com.cn</a></div>
+		    	    			</div>
+		    	    			<div class="right5">
+		    	    				<div><span>客服热线</span></div>
+		    	    				<div><span>0571-28090163</span></div>
+		    	    			</div>
+		    	    		</div>
+		    	    	</div>
+	    	    	</div>
+	    	</div>
+                <div class="box5-8">
+            </div>
+           
+	    </div>
+	    </div>
+	    <div class="bigbox7">
+	    	<div class="box7-1"><a href=""></a></div>
+	    	<div class="box7-2">
+	    		<div class="left7">
+	    			<div><a href=""></a> &nbsp;在线客服</div>
+	    			<div><a href=""></a> &nbsp;反馈</div>
+	    			<div><a href=""></a> &nbsp;加入我们</div>
+	    		</div>
+	    		<div class="right7">
+	    			<div>
+	    				<span>合作品牌:</span>
+	    				<span><a href=""></a></span>
+	    				<span><div></div><div></div></span>
+	    				<span>|&nbsp;合作媒体</span>
+	    				<span><div></div><div></div></span>
+	    			</div>
+	    		</div>
+	    	</div>
+	    	<div class="box7-3">
+	    		<div class="left7-3">
+	    			<a href=""></a>
+	    			<a href=""></a>
+	    		</div>
+	    	
+	    		<div class="right7-3">
+	    			<span>
+	    				<a href="">隐私</a>|
+	    				<a href="">法律条款</a>|
+	    				<a href="">API</a>
+	    			</span>
+	    			<span >
+	    				<p>©2018 暴雪娱乐有限公司版权所有 由上海网之易网络科技发展有限公司运营 <a>著作权侵权</a>| 新出审字[2013]1510号</p>
+	    				<p>文网进字[2013]029号 | <a>沪网文号〔2017〕9633-727号 </a>| <a>增值电信业务经营许可证编号：沪B2－20080012</a></p>
+	    				<p>互联网违法和不良信息举报电话：0571-28090163 沪公网安备 31011502022167号 | <a>上海市网络游戏行业自律公约</a></p>
+	    			</span>
+	    			<span>
+	    				<div>
+	    					<a href=""></a>
+	    					<a href=""></a>
+	    					<a href=""></a>
+	    					<a href=""></a>
+	    				</div>
+	    				<div>
+	    					<span>|  适龄提示：适合13岁及以上使用  <a>家长监护工程></a></span>
+	    				</div>
+	    			</span>
+	    		</div>
+	       </div>
+	    </div>
+		<div class="bigbox8">
+			<div class="box8-1"></div>
+			<div class="box8-2"></div>
+			<div class="box8-3"></div>
+		</div>
+	</body>
+</html>
