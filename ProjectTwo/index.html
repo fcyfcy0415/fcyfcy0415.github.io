@@ -1,0 +1,1224 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			*
+			{
+				box-sizing: border-box;
+			}
+			html
+			{
+				font-size: 62.5%;
+				margin:0;
+			}
+			body
+			{
+				margin-left: 0;
+				margin-right: 0;
+				margin-top: 0;
+				padding-left: 0;
+				padding-right: 0;
+				padding-top: 0;
+				
+				background-color: gainsboro;
+			}
+			.bigbox1
+			{
+				position: relative;
+				
+				width: 100%;
+				min-width: 1300px;	
+				max-height: 720px;
+					
+							
+				/*display: flex;*/
+			}
+			.bigbox1jpg
+			{
+				position:relative;
+				
+				width: 100%;
+				max-height: 720px;		
+				z-index: -1;
+				
+			}
+			.box1
+			{
+				position:absolute;
+				left: 5%;
+				right: 5%;
+				top: 20px;
+				margin: 0 auto;
+				
+				width: 90%;
+				height: 60px;				
+				max-width: 1200px;
+				min-width: 1140px;
+				
+				background-color: rgba(0,0,0,0.4);
+								
+				
+				/*margin-top: 20px;*/
+				/*overflow: hidden;*/
+				
+			}
+			/*导航栏 页面跳转begin*/
+			.left1
+			{
+				float: left;
+				margin-left: 0px;
+				
+				width: 740px;				
+				height: 60px;				
+				
+				padding: 0;
+				border: 0;
+			}
+			.left1 ul
+			{
+				margin-left: 10px;
+				margin-top: 20px;				
+				
+				width: 740px;
+				padding: 0;
+				
+				font-size: 20px;
+				list-style: none;
+			}
+			.left1 ul li
+			{				
+				float: left;
+			}
+			.left1 ul li a:hover
+			{
+				color: yellow;
+				border-top: 0.5rem solid yellow;
+				cursor: pointer;
+			}
+			.left1 ul li:before
+			{
+				padding-left:20px;
+				padding-right:20px;
+				content:"/ ";
+				color: white;
+			}
+			.left1 ul li:first-of-type:before
+			{
+				content:"";
+			} 
+			.left1 ul li:first-of-type a
+			{
+				color: yellow;
+				border-top: 5px solid yellow;
+			}
+			.left1 ul li a
+			{
+			    /*padding-left: 14px;
+			    padding-right: 14px;*/
+			    color: #dde4ec;          /* 文字颜色 */
+			    line-height: 13.5px;     /* 行高 */   
+			    text-decoration: none;   /* 不显示超链接下划线 */
+			    
+			}
+			/*导航栏页面跳转 end*/
+		
+			/*导航栏搜索begin*/
+			.right1
+			{
+				margin-top: 0px;
+				margin-right: 0px;
+				
+				width: 300px;
+				height: 60px;				
+				float: right;
+				
+				/*background-color: gold;*/
+			}
+			.right1 input[type="text"]
+			{
+				padding-left: 40px;
+				margin-left:50px ;
+				margin-top: 15px;
+				
+				width: 190px;
+				height: 30px;
+				
+				background: none;
+				border:1px solid white ;
+				color: white;
+				font-size: 15px;
+				
+			}
+			.right1 input[type="submit"]
+			{
+				position: absolute;
+				top: 17px;
+				right: 70px;
+				
+				height: 20px;
+				width: 28px;
+				
+				border: none;	
+				background:url(img/search.png);		
+			}
+			.right1 input[type="submit"]:hover
+			{
+				cursor: pointer;		
+			}
+			/*导航栏搜索end*/
+			/*文字begin*/
+			.box2
+			{		
+				position:absolute;
+				top: 30%;	
+				left: 25%;
+				right: 25%;	
+				width: 50%;
+				/*max-width: 32rem;	*/			
+				
+				
+				
+				
+				/*height: 20rem;*/
+				/*background-color: rgba(123,0,0,0.4);*/
+				
+				
+			}
+			.box2 a
+			{		
+				display: block;		
+				position: relative;
+				margin: 0 auto;
+				
+				width: 50%;
+				
+				font-size: 60px;
+				text-align: center;
+				color: #FFFFFF;
+				border-top:8px solid white ;
+				border-bottom: 8px solid white;
+				text-decoration: none; 
+				
+			}
+		    /*文字end*/
+		   
+		   
+		   .box3
+		   {
+		   	margin: -150px auto auto auto;
+			
+		   	width: 100%;
+		  	color: white;
+
+		   	font-size: 12px;
+		   	overflow: hidden;
+		   	
+		   	/*background-color:rgba(0,0,0,0.5);*/
+		   }
+		   .box3  div
+		   {
+		   	margin: 0 auto;
+		   	
+		   	width: 1140px;
+		   	/*background-color: red;*/
+		   	overflow: hidden;
+		   }
+		   .box3 .box3-1 
+		   {    
+		    margin-left: 43px;
+		   	
+		   	
+		    width: 230px;
+		   	height: 380px;
+		   	padding: 30px;		   
+		   	
+		   	background-color: green;	
+		   	float: left;
+		   }
+		   .box3 .box3-1 img
+		   {
+			margin: 0 auto;
+				
+			width: 100%;
+		    max-width: 170px;
+		   	padding: 10px;
+		   	
+		   	border: 6px solid white;
+		   	border-radius: 50%;
+		    -webkit-transition: all 3s;
+		   	transition: all 1s;
+		   }
+		   
+		   .box3 .box3-1:hover img
+		   {
+		   /*	-webkit-transform: rotate(45deg);*/
+		   	/*-webkit-*/transform:rotateY(360deg);
+		   }
+		   .box3 .box3-1 h3
+		   {
+		   	text-align: center;
+		   }
+		    .box3 .box3-1 p
+		    {
+		    	line-height: 20px;
+		    	text-align: center;
+		    }
+	    </style>
+		<style type="text/css">
+		   .bigbox2
+		   {
+		   	padding-top: 300px;
+		   	padding-bottom: 100px;
+		   	margin: auto;
+	
+	        width: 100%;
+	        min-width: 1300px;	
+		   	/*background-color: rgba(0,0,0,0.5);*/
+		   }
+		  
+		   .box2-2
+		   {
+		    margin: 0 auto;
+		   	width: 1140px;
+		   	overflow: hidden;
+		   	/*background-color: rgba(0,0,0,0.5);*/
+		   }
+		    .bigbox2 .box2-2 h3
+		   {
+		   	
+		   	font-size: 40px;
+		   }
+		   .box2-2 .left2
+		   {
+		   	width: 45%;
+		   	float: left;
+		   }
+		   
+		   .box2-2 .left2 img
+		    {
+		    	width: 100%;
+		    }
+		   .bigbox2 .box2-2 .right2
+		   {
+		   	
+		   	width: 45%;
+		   	float: right;
+		   	
+		   	line-height: 23px;
+		   	font-size: 17px;
+		   	/*background-color: rgba(0,0,0,0.5);*/
+		   }
+		  
+		   
+		</style>
+	    <style type="text/css">
+
+	    	.bigbox3
+	    	{	 
+	    		padding-bottom: 400px; 		
+	    		margin-bottom: 0px;
+	    		/*height: 800px;*/
+	    		min-width: 1300px;
+	    		/*min-height: 650px;*/
+		   	    
+	    		background-color:black;
+	    	}
+	    	.bigbox3 .box
+	    	{
+	    		margin: 0 auto;
+	    		width:1140px ;
+	    		/*background-color: oldlace;*/
+	    	}
+	    	.bigbox3 .box h3
+	    	{
+	    		padding-top: 7%;
+	    		margin-left: 6%;
+	    		
+	    		font-size: 30px;
+	    		color: white;
+	    		
+	    	}
+	    	.bigbox3 .box .box3-1
+	    	{
+	    		margin-left: 2.5%;
+	    		float: left;
+	    		
+	    		width: 30%;
+	    		height: 100%;
+	    		
+	    		/*background-color: greenyellow;*/
+	    	}
+	    	.bigbox3 .box .box3-1 div
+	    	{
+	    		margin: 0 auto;
+	    		width: 100%;
+	    		padding: 10px 10px;
+	    		max-width: 300px;
+	    		
+	    		/*background-color: blue;*/
+	    		
+	    	}
+	    	.bigbox3 .box .box3-1 div img
+			   {
+				display: block;
+				margin: 0 auto;
+				
+				width: 50%;
+			    max-width: 100px;
+			   	padding: 10px;			   	
+			   
+			    background-color: green;
+			   	border-radius: 10%;
+			    transition: all 0.1s;
+			    
+			    
+			   }
+			.bigbox3 .box .box3-1 div img:hover 
+			   {
+				background-color: orange;
+			   }   
+			.bigbox3 .box .box3-1 div h4
+			{
+				color: white;
+				text-align: center;
+				font-size: 17px;
+			} 
+			.bigbox3 .box .box3-1 div p
+			{
+				color: white;
+				line-height: 20px;
+				font-size: 14px;
+			}
+			  
+	    </style>
+	    <style type="text/css">
+	    	.bigbox4
+	    	{
+				padding-right: 0;
+				padding-top: 100px;
+				padding-bottom:150px ;
+
+	    		width: 100%;
+	    		
+	    		min-width: 1300px;
+	    		
+	    		/*background-color: red;*/
+	    	}
+	    	.bigbox4 .box
+	    	{
+	    		margin: 0 auto;
+	    		
+	    		width: 1140px;
+	    		
+	    		flex-flow: row wrap;
+	    		display: flex;
+	    	}
+	    	.bigbox4 .box .box4-1
+	    	{
+	    		position: relative;
+	    		flex-basis: 25%;
+	    		float: left;
+	    	}
+	    	.bigbox4 .box h3
+	    	{
+	    		display: block;
+	    		width: 100%;
+	    		color: black;
+	    		font-size: 30px;
+	    		
+	    	}
+	    	.bigbox4 .box .box4-1 .img1
+	    	{
+	    		width: 100%;
+	    		vertical-align: middle;
+	    		/*height: 100%;*/
+	    		
+	    	}
+	    	.bigbox4 .box .box4-1 .img2
+	    	{
+	    		position:absolute;
+	    		top: 0;
+	    		left: 0; 
+	    		/*margin-top: 50%;
+	    		margin-left: 50%;*/
+	    		background-color: rgba(0,0,0,0.5);
+	    		
+	    		width:100%;
+	    		height: 100%;
+	    		
+	    		padding: 70px 80px;
+	    		transition: all 1s;
+	    		
+	    		transform: scale(0);
+	    	}
+	    	.bigbox4 .box .box4-1:hover .img2
+	    	{
+	    		transform: scale(1);	    		
+	    		box-shadow:0 0 10px 0 white;
+	    	}
+	    </style>
+	    <style type="text/css">
+	    	.bigbox5
+	    	{
+	    		
+	    		padding-top: 100px;
+	    		padding-bottom: 130px;
+	    		min-width: 1300px;
+	 
+	    		background-color: white;
+	    	}
+	    	.bigbox5 .box h3
+	    	{
+	    		padding-top: 40px;
+	    		padding-left: 50px;
+	    		padding-bottom: 40px;
+	    		margin-left: 10px;
+	    		
+	    		height: 40px;
+	    		
+	    		font-size: 30px;
+	    	}
+	    	.bigbox5 .box
+	    	{
+	    		
+	    		padding-bottom: 50px;
+	    		margin: 0 auto;
+	    		
+	    		width: 1140px;
+	    		/*height: 490px;*/
+	    		overflow: hidden;
+	    		/*background-color: red;*/
+	    	}
+	    	.bigbox5 .box .box5-1
+	    	{
+	    		
+	    		margin-left: 60px;
+	    		float: left;
+	    		width: 290px;
+	    		/*height: 166px;*/
+	    		
+	    		/*background-color: red;*/
+	    	}
+	    	.bigbox5 .box .box5-1 img
+	    	{
+	    		width:100%;
+	    	}
+	    	.bigbox5 .box .box5-1 h4
+	    	{
+	    		text-align: center;
+	    		font-size: 17px;
+	    	}
+	    	.bigbox5 .box .box5-1 p
+	    	{
+	    		padding-left: 5px;
+	    		padding-right: 5px;
+	    		text-align: center;
+	    		line-height: 25px;
+	    		font-size: 15px;
+	    	}
+	    	.bigbox5 .box .box5-1 div 
+	    	{
+	    		position: relative;
+	    		top: 20px;
+	    		
+	    		width: 130px;
+	    		height: 40px;
+	    		
+	    		background-color: orange;
+	    	}
+	    	.bigbox5 .box .box5-1 div a
+	    	{
+	    		position: absolute;
+	    		margin-left: 18px;
+	    		color: white;
+	    		font-size: 20px;
+	    		line-height: 40px;
+	    		text-decoration: none;
+	    		z-index: 1;
+	    	}
+	    	.bigbox5 .box .box5-1 div i
+	    	{
+	    		position: absolute;
+	    		left: 0;
+	    		width: 100%;
+	    		height: 100%;
+	    		z-index: 0;
+	    		background-color:green;
+	    		transition: all 0.5s;
+	    	}
+	    	.bigbox5 .box .box5-1 div:hover i
+	    	{
+	    		-webkit-transform: rotateX(90deg);
+	    		transform: rotateX(90deg);
+	    	}
+	    	.bigbox5 .box .box5-1 input[type="button"]:hover 
+	    	{
+	    		background-color: orange;
+	    	}
+	    	
+	    </style>
+		<style type="text/css">
+			.bigbox6
+			{
+				
+				padding-top: 100px;
+				padding-bottom: 150px;
+				width: 100%;
+				min-width: 1300px;
+				/*height: 700px;*/
+				overflow: hidden;
+				background-color: black;				
+			}
+			.bigbox6 .box
+			{
+				margin: auto;
+				
+				width:1140px;
+				overflow: hidden;
+				
+				/*background-color: red;*/
+			}
+			.bigbox6 .box .box6-1
+			{
+				float: left;
+				margin-left: 2.5%;
+				width: 30%;
+				height: 100%;
+				/*background-color: blue;*/
+			}
+			.bigbox6 .box .box6-2
+			{
+				float: left;
+				margin-left: 2.5%;
+				width: 30%;
+				height: 100%;
+				/*background-color: blue;*/
+			}
+			.bigbox6 .box .box6-1 h4
+			{
+				margin-top:30px;
+				margin-left: auto;
+				margin-right: auto;
+				margin-bottom: 40px;
+				padding: 0;
+				
+				/*text-align:center;*/
+				
+				color: white;
+				width: 100%;
+				height: 10%;
+				
+				font-size: 30px;
+				/*background-color: palevioletred;*/
+			}
+			.bigbox6 .box .box6-2 h4
+			{
+				margin-top:30px;
+				margin-bottom: 40px;
+				margin-left: 33px;
+				padding: 0;
+				
+				color: white;
+				width: 70%;
+				height: 10%;
+				
+				font-size: 30px;
+				/*background-color: palevioletred;*/
+			}
+			.bigbox6 .box .box6-1 div 
+			{
+				margin-top: 1px;
+				width: 100%;
+				/*height: 25%;*/
+				
+			    overflow: hidden;
+			    /*background-color: palevioletred;*/
+			}
+			.bigbox6 .box .box6-1 div .left3
+			{
+				width: 30%;
+				height: 100%;
+				float: left;
+				/*background-color: black;*/
+			}
+			.bigbox6 .box .box6-1 div .right3
+			{
+				width: 65%;
+				height: 100%;
+				float: right;
+				/*background-color:peru;*/
+			}
+			.bigbox6 .box .box6-1 div .left3 img
+			{  
+				/*margin-top: 50%;*/
+				width: 100%;
+			}
+			.bigbox6 .box .box6-1 div .right3 h5
+			{
+				
+				margin-top:0px;
+				margin-bottom: 10px;
+				color: white;
+				font-size: 20px;
+				/*background-color: goldenrod;*/
+			}
+			.bigbox6 .box .box6-1 div .right3 p
+			{
+				margin-top: 0;
+				color: white;
+				font-size: 15px;
+				
+			}
+			.bigbox6 .box .box6-1 ul li
+			{
+				color: gray;
+				font-size: 15px;
+				display: inline-block;
+			}
+			.bigbox6 .box .box6-2 ul li
+			{
+				padding: 6px 15px;
+				color: gainsboro;
+				font-size: 15px;
+				background:url(img/list-arrow.png) no-repeat 0px 15px;
+				list-style: none;
+				line-height: 1.8em;
+				cursor: pointer;
+			}
+			.bigbox6 .box .box6-2 ul li:hover 
+			{
+				color: orange;
+			}
+			.phone
+			{
+				width: 40px;
+				height: 40px;
+				background: url(img/img-sprite1.png) no-repeat -220px 0px;
+				display: inline-block;
+			}
+			.smartphone
+			{
+				width: 40px;
+				height: 40px;
+				background: url(img/img-sprite1.png) no-repeat -260px 0px;
+				display: inline-block;
+			}
+			.message
+			{
+				width: 40px;
+				height: 40px;
+				background: url(img/img-sprite1.png) no-repeat -300px 0px;
+				display: inline-block;
+			}
+		</style>
+	    <style type="text/css">
+	    	.bigbox7
+	    	{
+	    		
+	    		padding-top: 100px;
+	    		
+	    		width: 100%;
+	    		min-width: 1300px;
+	    		height: 500px;
+	    		
+	    		/*background-color: orange;*/
+	    	}
+	        .bigbox7 .box
+	        {
+	        	margin:0 auto;
+	        	
+	        	width: 1300px;
+	        	height: 100%;
+	        	
+	        	
+	        	/*background-color: goldenrod;*/
+	        }
+	        .bigbox7 .box .box7-1
+	        {
+	        	margin: 0 auto;
+	        	margin-top: 35px;
+	        	
+	        	width: 90%;
+	        	height: 20%;
+	        	
+	        	/*background-color: green;*/
+	        }
+	         .bigbox7 .box .box7-2
+	        {
+	        	margin: 0 auto;
+	        	margin-top: 35px;
+	        	
+	        	width: 67%;
+	        	height: 20%;
+	        	
+	        	/*background-color: green;*/
+	        }
+	         .bigbox7 .box .box7-1:nth-of-type(1)
+	        {
+	        	margin: 0 auto;
+	        	margin-top: 35px;
+	        	
+	        	width: 25%;
+	        	height: 20%;
+	        	
+	        	/*background-color: green;*/
+	        }
+	        .bigbox7 .box .box7-1:nth-of-type(1) a
+	        {
+	        	margin-top: 10px;
+	        	margin-left: 6%;
+	        	width: 55px;
+	        	height: 55px;
+	        	/*background-color: red;*/
+	        	float: left;
+	        }
+	        .bigbox7 .box .box7-1 a i:hover
+	        {
+	        	opacity: 0.5;
+	        }
+	        .bigbox7 .box .box7-1:nth-of-type(2)
+	        {
+	        	height: 15%;
+	        }
+	        .bigbox7 .box .box7-1:nth-of-type(3)
+	        {
+	        	
+	        	margin-left: 0;
+	        
+	        	margin-top: 35px;
+	        	
+	        	width: 100%;
+	        	height: 20%;
+	        	
+	        	/*background-color: green;*/
+	        }
+            .bigbox7 .box .box7-2 ul
+	        {
+	        	display: block;
+	        	margin: 0 auto;
+				margin-top: 20px;				
+				
+				width: 80%;
+				padding: 0;
+				
+				font-size: 14px;
+				list-style: none;
+				overflow: hidden;
+				/*background-color: red;*/
+	        }
+	         .bigbox7 .box .box7-2 ul li
+	         {
+	         	margin-left: 3%;
+	         	
+	         	/*width: 5%;*/
+	         	font-size: 20px;
+	         	float: left;
+	         	/*background-color: palevioletred;*/
+	         	
+	         }
+	         .bigbox7 .box .box7-2 ul li a
+			{
+			    padding-left: 14px;
+			    padding-right: 14px;
+			    color: black;          /* 文字颜色 */
+			    line-height: 13.5px;     /* 行高 */   
+			    text-decoration: none;   /* 不显示超链接下划线 */
+			    white-space: nowrap;     
+			    /* 对于文本内的空白处，不会换行，文本会在在同一行上继续，
+			     * 直到遇到 <br> 标签为止。 */
+			}
+			.bigbox7 .box .box7-1 p
+			{
+				text-align: center;
+				font-size: 19px;
+			}
+	        .ic1
+	        {
+	        	width: 100%;
+	        	height: 100%;
+	        	/*margin: 0 0 0 1em;*/
+	        	display: inline-block;
+	        	background: url(img/img-sprite1.png) no-repeat 0px 0px;
+	        }
+	        .ic2
+	        {
+	        	width: 100%;
+	        	height: 100%;
+	        	/*margin: 0 0 0 1em;*/
+	        	display: inline-block;
+	        	background: url(img/img-sprite1.png) no-repeat -55px 0px;
+	        }
+	        .ic3
+	        {
+	        	width: 100%;
+	        	height: 100%;
+	        	/*margin: 0 0 0 1em;*/
+	        	display: inline-block;
+	        	background: url(img/img-sprite1.png) no-repeat -110px 0px;
+	        }
+	        .ic4
+	        {
+	        	width: 100%;
+	        	height: 100%;
+	        	/*margin: 0 0 0 1em;*/
+	        	display: inline-block;
+	        	background: url(img/img-sprite1.png) no-repeat -165px 0px;
+	        }
+	    </style> 
+	</head>
+	<body>
+		<!--
+        	作者：offline
+        	时间：2018-07-24
+        	描述：头部 begin
+        -->
+       
+		<div class="bigbox1">
+			<img src="img/banner.jpg" class="bigbox1jpg"/>
+			<div class="box1">
+				<div class="left1">
+					
+					<ul >
+						<li><a href="index.html">Home    </a></li>
+						<li><a>Aboue   </a></li>
+						<li><a>Servise </a></li>
+						<li><a>Products</a></li>
+						<li><a>Blog    </a></li>
+						<li><a href="contact.html">Contact </a></li>
+					</ul>
+				</div>
+				<div class="right1">
+					<form>
+						<input type="text" />
+						<input type="submit" value=""/>
+					</form>
+				</div>
+			</div>
+			<div class="box2">
+				
+				 <a href="index.html">Cultivation</a>
+				
+			</div>
+			<div class="box3">
+				<div>
+					<div class="box3-1">					
+							<img src="img/icon4.png"/>
+							<h3>Dolor nunc vule</h3>
+							<p>Cras consequat iaculis lorem, id vehicula erat mattis quis. Vivamus laoreet velit justo, in ven e natis purus.</p>					
+					</div>
+					<div class="box3-1">
+							<img src="img/icon5.png"/>
+							<h3>vule Dolor nunc</h3>
+							<p>Cras consequat iaculis lorem, id vehicula erat mattis quis. Vivamus laoreet velit justo, in ven e natis purus.</p>
+					</div>
+					<div class="box3-1">					
+							<img src="img/icon6.png"/>
+							<h3>nunc vule put </h3>
+							<p>Cras consequat iaculis lorem, id vehicula erat mattis quis. Vivamus laoreet velit justo, in ven e natis purus.</p>					
+					</div>
+					<div class="box3-1">					
+							<img src="img/icon7.png"/>
+							<h3>Cras consequat </h3>
+							<p>Cras consequat iaculis lorem, id vehicula erat mattis quis. Vivamus laoreet velit justo, in ven e natis purus.</p>					
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		<div class="bigbox2">
+			
+			<div class="box2-2">
+				<h3>About Us</h3>
+				<div class="left2">
+					<img src="img/img1.jpg"/>
+				</div>
+				
+				<div class="right2">
+					<p>
+						 &nbsp; &nbsp;Cras consequat iaculis lorem, id vehicula erat mattis quis.
+						 Vivamus laoreet velit justo, in ven e natis purus pretium 
+						 sit amet. Praesent lectus tortor, tincidu nt in consectetur
+					     vestibulum, ultrices nec neque. Praesent nec sagittis mauris.
+						 Fusce convallis nunc neque. Integer egestas aliquam interdum.
+						 Nulla ante diam, interdum nec tempus eu, feugiat vel erat.
+						 Cras consequat iaculis lorem, id vehicula erat mattis quis.
+						 Cras consequat iaculis lorem, id vehicula erat mattis. 
+						 Integer egestas aliquam interdum. Nulla ante diam,
+					</p>
+					<p>
+						&nbsp; &nbsp;lorem,Cras consequat iaculis id vehicula erat mattis quis. 
+						Vivamus laoreet velit justo, in ven e natis purus pretium sit
+					    amet. Praesent lectus tortor, tincidu nt in consectetur 
+					    vestibulum, ultrices nec neque. Praesent nec sagittis mauris. 
+					    Fusce convallis nunc neque. Integer egestas aliquam interdum. 
+					    Nulla ante diam, interdum nec tempus eu, feugiat vel erat.
+					    Cras consequat iaculis lorem, id vehicula erat mattis quis.
+					    Cras consequat iaculis lorem, id vehicula erat mattis.
+					</p>
+				</div>
+			</div>		
+		</div>
+		<div class="bigbox3">
+	    	
+	    	<div class="box">
+	    		<h3>Our Services</h3>
+		    	<div class="box3-1">
+		    		<div>
+			    		<img src="img/icon1.png"/>
+			    		<h4>Dolor nunc vule putateulr</h4>
+			    		<p>
+			    			&nbsp;&nbsp;Cras consequat iaculis lorem, id vehicula erat mattis
+			    		    quis. Vivamus laoreet velit justo, in ven e natis purus.
+			    		    Praesent nec sagittis mauris. Fusce convallis nunc neque.
+			    		    Integer egestas.Vivamus laoreet velit justo
+			    		</p>
+		    		</div>
+		    	</div>	
+		    	<div class="box3-1">
+		    		<div>
+			    		<img src="img/icon2.png"/>
+			    		<h4>Dolor nunc vule putateulr</h4>
+			    		<p>
+			    			&nbsp;&nbsp;Cras consequat iaculis lorem, id vehicula erat mattis
+			    		    quis. Vivamus laoreet velit justo, in ven e natis purus.
+			    		    Praesent nec sagittis mauris. Fusce convallis nunc neque.
+			    		    Integer egestas.Vivamus laoreet velit justo
+			    		</p>
+		    		</div>
+		    	</div>	
+		    	<div class="box3-1">
+		    		<div>
+			    		<img src="img/icon3.png"/>
+			    		<h4>Dolor nunc vule putateulr</h4>
+			    		<p>
+			    			&nbsp;&nbsp;Cras consequat iaculis lorem, id vehicula erat mattis
+			    		    quis. Vivamus laoreet velit justo, in ven e natis purus.
+			    		    Praesent nec sagittis mauris. Fusce convallis nunc neque.
+			    		    Integer egestas.Vivamus laoreet velit justo
+			    		</p>
+		    		</div>
+		    	</div>	
+	    	</div>
+	    </div>
+		<div class="bigbox4">
+			    	
+			    	<div class="box">
+			    		<h3>Our Latest Works</h3>
+				    	<div class="box4-1">
+				    		<img class="img1" src="img/img2.jpg"/>
+				    		<img class="img2" src="img/magnify.png"/>			    		
+				    	</div>	
+				    	<div class="box4-1">
+				    		<img class="img1" src="img/img3.jpg"/>
+				    		<img class="img2" src="img/magnify.png"/>			    		
+				    	</div>	
+				    	<div class="box4-1">
+				    		<img class="img1" src="img/img4.jpg"/>
+				    		<img class="img2" src="img/magnify.png"/>			    		
+				    	</div>	
+				    	<div class="box4-1">
+				    		<img class="img1" src="img/img5.jpg"/>
+				    		<img class="img2" src="img/magnify.png"/>			    		
+				    	</div>	
+				    	<div class="box4-1">
+				    		<img class="img1" src="img/img6.jpg"/>
+				    		<img class="img2" src="img/magnify.png"/>			    		
+				    	</div>	
+				    	<div class="box4-1">
+				    		<img class="img1" src="img/img7.jpg"/>
+				    		<img class="img2" src="img/magnify.png"/>			    		
+				    	</div>	
+				    	<div class="box4-1">
+				    		<img class="img1" src="img/img8.jpg"/>
+				    		<img class="img2" src="img/magnify.png"/>			    		
+				    	</div>	
+				    	<div class="box4-1">
+				    		<img class="img1" src="img/img9.jpg"/>
+				    		<img class="img2" src="img/magnify.png"/>			    		
+				    	</div>	
+			    	</div>
+		        </div>
+		<div class="bigbox5">
+		        	
+		        	<div class="box">
+		        		<h3>Latest News</h3>
+		        		<div class="box5-1">		        			
+		        			<img src="img/img10.jpg"/>
+		        			<h4>Dolor nunc vule putateulr</h4>
+		        			<p>March 23rd, 2015 5 Comments </p>
+		        			<p>
+		        				Praesent vestim molestie lacus. Aenean nonummy
+		        			 	hendrerit mauris. Phasellus porta. 
+		        			 	Fusce suscipit varius mi. Cum sociis natoque
+		        			    penatibus et magnis dis parturient montes, 
+		        			    nascetur ridiculus mus. 
+		        			</p>
+		        			<div><a href="">Read More</a><i></i></div>
+		        			<!--<input type="button" value="Read More" />-->
+		        		</div>
+		        		<div class="box5-1">		        			
+		        			<img src="img/img11.jpg"/>
+		        			<h4>Dolor nunc vule putateulr</h4>
+		        			<p>March 23rd, 2015 5 Comments </p>
+		        			<p>
+		        				Praesent vestim molestie lacus. Aenean nonummy
+		        			 	hendrerit mauris. Phasellus porta. 
+		        			 	Fusce suscipit varius mi. Cum sociis natoque
+		        			    penatibus et magnis dis parturient montes, 
+		        			    nascetur ridiculus mus. 
+		        			</p>
+		        			<div><a href="">Read More</a><i></i></div>
+		        			<!--<input type="button" value="Read More" />-->
+		        		</div>
+		        		<div class="box5-1">		        			
+		        			<img src="img/img12.jpg"/>
+		        			<h4>Dolor nunc vule putateulr</h4>
+		        			<p>March 23rd, 2015 5 Comments </p>
+		        			<p>
+		        				Praesent vestim molestie lacus. Aenean nonummy
+		        			 	hendrerit mauris. Phasellus porta. 
+		        			 	Fusce suscipit varius mi. Cum sociis natoque
+		        			    penatibus et magnis dis parturient montes, 
+		        			    nascetur ridiculus mus. 
+		        			</p>
+		        			<div><a href="">Read More</a><i></i></div>
+		        			<!--<input type="button" value="Read More" />-->
+		        		</div>
+		        	</div>
+		        </div>
+		<div class="bigbox6">
+			<div class="box">
+				<div class="box6-1">
+					<h4>Upcome events</h4>
+					<div>
+						<div class="left3">
+							<img src="img/im1.jpg"/>
+						</div>
+						<div class="right3">
+							<h5>sagittis magna</h5>
+							<p>
+								Lorem ipsum dolor
+								 sit 
+								amet,consectetur 
+								adipiscing elit.
+			
+							</p>
+						</div>
+					</div>
+					<div>
+						<div class="left3">
+							<img src="img/im2.jpg"/>
+						</div>
+						<div class="right3">
+							<h5>sagittis magna</h5>
+							<p>
+								Lorem ipsum dolor
+								 sit 
+								amet,consectetur 
+								adipiscing elit.
+			
+							</p>
+						</div>
+					</div>
+					<div>
+						<div class="left3">
+							<img src="img/im3.jpg"/>
+						</div>
+						<div class="right3">
+							<h5>sagittis magna</h5>
+							<p>
+								Lorem ipsum dolor
+								 sit 
+								amet,consectetur 
+								adipiscing elit.
+			
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="box6-2">
+					<h4>
+						Categories
+					</h4>
+					<ul>
+						<li>Praesent vestim molestie lacus.</li>
+						<li>Cras consequat iaculis lorem</li>
+						<li>Consectetur adipiscing iaculis</li>
+						<li>Lorem ipsum dolor sit</li>
+						<li>Cum sociis natoque penatibus et magnis </li>
+						<li>Integer molestie lorem</li>
+						<li>lorem,Cras consequat iaculis id vehicula</li>
+					</ul>
+				</div>
+				<div class="box6-1">
+					<h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contact</h4>
+					<ul>
+						<li>
+							<i class="phone"></i>
+						</li>
+						<li>
+							<p>1-000-000-0000</p>
+							<p>1-000-000-0000</p>
+						</li>
+					</ul>
+					<ul>	
+						<li>
+							<i class="smartphone"></i>
+						</li>
+						<li>
+							<p>Seventh Avenue</p>
+							<p> Chelsea, Manhattan</p>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<i class="message"></i>
+						</li>
+						<li>
+							<p>bcdefg@hijs.dfh</p>
+							<p>fjashfaf@jkfs.ckd</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="bigbox7">
+			<div class="box">
+				<div class="box7-1">
+					<a href=""><i class="ic1"></i></a>
+					<a href=""><i class="ic2"></i></a>
+					<a href=""><i class="ic3"></i></a>
+					<a href=""><i class="ic4"></i></a>
+				</div>
+			
+				<div class="box7-2">
+					<ul>
+						<li><a href="">home    </a></li>
+						<li><a href="">About   </a></li>
+						<li><a href="">Services</a></li>
+						<li><a href="">products</a></li>
+						<li><a href="">blog    </a></li>
+						<li><a href="">Contact </a></li>
+					</ul>
+				</div>
+			
+				<div class="box7-1">
+					<p>
+						Copyright © 2015.Company name All rights
+					   reserved.More Templates 模板之家- Collect 
+					   from 网页模板 
+					</p>
+				</div>
+			</div>
+		</div>
+		<!--
+        	作者：offline
+        	时间：2018-07-24
+        	描述：身体1 begin
+        -->
+		
+	</body>
+</html>

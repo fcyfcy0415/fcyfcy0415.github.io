@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*
+			{
+				box-sizing: border-box;
+			}
+			html
+			{
+				font-size: 62.5%;
+				margin:0;
+			}
+			body
+			{
+				margin-left: 0;
+				margin-right: 0;
+				margin-top: 0;
+				padding-left: 0;
+				padding-right: 0;
+				padding-top: 0;
+				
+				background-color:white;
+			}
+			.bigbox1
+			{
+				margin: 0 auto;
+				
+				width: 100%;
+				min-width: 1300px;	
+				
+					
+							
+				/*display: flex;*/
+			}
+			.bigbox1jpg
+			{
+				position: absolute;
+				width: 100%;
+				min-width: 1300px;
+				max-height: 520px;
+				z-index: -1;
+			}
+			.box1
+			{
+				position:relative;
+				
+				top: 20px;
+				margin: 0 auto;
+				
+				width: 1140px;
+				height: 60px;				
+				
+				
+				background-color: rgba(0,0,0,0.4);
+								
+				
+				/*margin-top: 20px;*/
+				/*overflow: hidden;*/
+				
+			}
+			/*导航栏 页面跳转begin*/
+			.left1
+			{
+				float: left;
+				margin-left: 0px;
+				
+				width: 740px;				
+				height: 60px;				
+				
+				padding: 0;
+				border: 0;
+			}
+			.left1 ul
+			{
+				margin-left: 10px;
+				margin-top: 20px;				
+				
+				width: 740px;
+				padding: 0;
+				
+				font-size: 20px;
+				list-style: none;
+			}
+			.left1 ul li
+			{				
+				float: left;
+			}
+			.left1 ul li a:hover
+			{
+				color: yellow;
+				border-top: 0.5rem solid yellow;
+				cursor: pointer;
+			}
+			.left1 ul li:before
+			{
+				padding-left:20px;
+				padding-right:20px;
+				content:"/ ";
+				color: white;
+			}
+			.left1 ul li:first-of-type:before
+			{
+				content:"";
+			} 
+			.left1 ul li:last-of-type a
+			{
+				color: yellow;
+				border-top: 5px solid yellow;
+			}
+			.left1 ul li a
+			{
+			    /*padding-left: 14px;
+			    padding-right: 14px;*/
+			    color: #dde4ec;          /* 文字颜色 */
+			    line-height: 13.5px;     /* 行高 */   
+			    text-decoration: none;   /* 不显示超链接下划线 */
+			    
+			}
+			/*导航栏页面跳转 end*/
+		
+			/*导航栏搜索begin*/
+			.right1
+			{
+				margin-top: 0px;
+				margin-right: 0px;
+				
+				width: 300px;
+				height: 60px;				
+				float: right;
+				
+				/*background-color: gold;*/
+			}
+			.right1 input[type="text"]
+			{
+				padding-left: 40px;
+				margin-left:50px ;
+				margin-top: 15px;
+				
+				width: 190px;
+				height: 30px;
+				
+				background: none;
+				border:1px solid white ;
+				color: white;
+				font-size: 15px;
+				
+			}
+			.right1 input[type="submit"]
+			{
+				position: absolute;
+				top: 17px;
+				right: 70px;
+				
+				height: 20px;
+				width: 28px;
+				
+				border: none;	
+				background:url(img/search.png);		
+			}
+			.right1 input[type="submit"]:hover
+			{
+				cursor: pointer;		
+			}
+			/*导航栏搜索end*/
+			/*文字begin*/
+			.box2
+			{		
+				margin: 200px auto;
+					
+				width: 1140px;
+				/*background-color: rgba(123,0,0,0.4);*/
+			}
+			.box2 a
+			{		
+				display: block;		
+				margin: 0 auto;
+				
+				width: 27%;
+				
+				font-size: 60px;
+				text-align: center;
+				color: #FFFFFF;
+				border-top:8px solid white ;
+				border-bottom: 8px solid white;
+				text-decoration: none; 
+				
+			}
+		    /*文字end*/		  
+	    </style>
+		<style type="text/css">
+			input
+			{
+				margin: 0;
+				padding: 0;
+			}
+			span
+			{
+				margin: 0;
+				/*height: 0;*/
+			}
+			.cbigbox2
+			{				
+				margin: 0 auto;
+				width: 100%;
+				min-width: 1300px;
+				/*height: 700px;*/
+			
+				/*background-color: rgba(0,100,0,1);*/
+			}
+			
+			.cbigbox2 .cbox2-1 
+			{
+				margin: 0 auto 0;
+				
+				width: 1140px;
+				height: 100px;
+				
+				/*background-color: bisque;*/
+			}
+			.cbigbox2 .cbox2-1 h3
+			{
+				display:inline-block;
+				margin-top: 40px;
+				margin-left: 25%;
+
+				width: 50%;
+				
+				font-size: 40px;
+				text-align: center;
+				color: black;
+				/*background-color: blue;*/
+			}
+			
+			.cbigbox2 .cbox2-2 
+			{
+				
+				margin: 0 auto;
+				
+				width:1140px;
+				
+				height: 340px;
+				
+				/*background-color: papayawhip;*/
+			}
+			.cbigbox2 .cbox2-2 div
+			{
+				margin: 0 auto;
+				
+				width: 100%;
+				height: 100%;
+				
+				transition: all 0.3s;
+				border: 2px solid gainsboro;
+				background-color: gainsboro;
+			}
+			.cbigbox2 .cbox2-2 div:hover
+			{
+				background-color: gray;
+			}
+			.cbigbox2 .cbox2-3
+			{
+				
+				margin: 0 auto;
+				
+				width: 1140px;
+				
+				height: 600px;
+				
+				/*background-color: palegoldenrod;*/
+			}
+			.cbigbox2 .cbox2-3 form .cbox2-3-1
+			{
+				position: relative;
+				margin: 0 auto;
+				
+				width:100%;
+				height: 100px;
+				
+				/*background-color: gold;*/
+			}
+			.cbigbox2 .cbox2-3 form .cbox2-3-1 div
+			{
+				float: left;
+				margin-right:0.5%;
+				
+				width: 33%;
+				height: 100%;
+				
+				/*background-color: olive;*/
+			}
+			.cbigbox2 .cbox2-3 form .cbox2-3-1 div:last-of-type
+			{
+				margin-right: 0;
+			}
+			.cbigbox2 .cbox2-3 form .cbox2-3-1 div span
+			{
+				
+				margin-left: 0px;
+				font-size: 20px;
+				/*background-color: brown;*/
+			}
+			.cbigbox2 .cbox2-3 form .cbox2-3-1 div input
+			{
+				padding-left: 20px;
+				
+				outline: none;
+				width: 100%;
+				height: 50%;
+				
+				
+				border: 1px solid gainsboro;				
+				font-size: 20px;
+				
+				color:gray;
+				
+			}
+			.cbigbox2 .cbox2-3 form .cbox2-3-1 div:hover input
+			{
+				color: burlywood;
+				border: 1px solid burlywood;
+			}
+			.cbigbox2 .cbox2-3 form div
+			{
+				margin: 0 auto;
+				
+				width: 100%;
+				height: 500px;
+				
+				/*background-color: goldenrod;*/
+			}
+			.cbigbox2 .cbox2-3 form div span
+			{
+				display: block;
+				margin-top: 40px;
+				
+				width: 80%;
+				
+				color: grey;
+				font-size: 20px;
+				
+				/*background-color: brown;*/
+			}
+			.cbigbox2 .cbox2-3 form div textarea
+			{
+				display: block;
+				padding-top: 20px;
+				padding-left:20px ;
+				margin: 0 auto;
+				
+				width: 100%;
+				height: 300px;
+				
+				outline: none;
+				font-size: 20px;
+				resize: none;
+				border: 1px solid gainsboro;
+				background-color: white;
+			}
+			.cbigbox2 .cbox2-3 form div textarea:hover
+			{
+				color: burlywood;
+				border: 1px solid burlywood;
+			}
+			.cbigbox2 .cbox2-3 form div input[type="submit"]
+			{
+				margin-top: 20px;
+				
+				
+				width: 150px;
+				height: 50px;
+				
+				color: white;
+				transition: all 1s;
+				background-color: green;
+			}
+			.cbigbox2 .cbox2-3 form div input[type="submit"]:hover 
+			{
+				background-color: orange;
+			}
+		</style>
+	    <style type="text/css">
+			.bigbox6
+			{
+				
+				padding-top: 100px;
+				padding-bottom: 150px;
+				width: 100%;
+				min-width: 1300px;
+				/*height: 700px;*/
+				overflow: hidden;
+				background-color: black;				
+			}
+			.bigbox6 .box
+			{
+				margin: auto;
+				
+				width:1140px;
+				overflow: hidden;
+				
+				/*background-color: red;*/
+			}
+			.bigbox6 .box .box6-1
+			{
+				float: left;
+				margin-left: 2.5%;
+				width: 30%;
+				height: 100%;
+				/*background-color: blue;*/
+			}
+			.bigbox6 .box .box6-2
+			{
+				float: left;
+				margin-left: 2.5%;
+				width: 30%;
+				height: 100%;
+				/*background-color: blue;*/
+			}
+			.bigbox6 .box .box6-1 h4
+			{
+				margin-top:30px;
+				margin-left: auto;
+				margin-right: auto;
+				margin-bottom: 40px;
+				padding: 0;
+				
+				/*text-align:center;*/
+				
+				color: white;
+				width: 100%;
+				height: 10%;
+				
+				font-size: 30px;
+				/*background-color: palevioletred;*/
+			}
+			.bigbox6 .box .box6-2 h4
+			{
+				margin-top:30px;
+				margin-bottom: 40px;
+				margin-left: 33px;
+				padding: 0;
+				
+				color: white;
+				width: 70%;
+				height: 10%;
+				
+				font-size: 30px;
+				/*background-color: palevioletred;*/
+			}
+			.bigbox6 .box .box6-1 div 
+			{
+				margin-top: 1px;
+				width: 100%;
+				/*height: 25%;*/
+				
+			    overflow: hidden;
+			    /*background-color: palevioletred;*/
+			}
+			.bigbox6 .box .box6-1 div .left3
+			{
+				width: 30%;
+				height: 100%;
+				float: left;
+				/*background-color: black;*/
+			}
+			.bigbox6 .box .box6-1 div .right3
+			{
+				width: 65%;
+				height: 100%;
+				float: right;
+				/*background-color:peru;*/
+			}
+			.bigbox6 .box .box6-1 div .left3 img
+			{  
+				/*margin-top: 50%;*/
+				width: 100%;
+			}
+			.bigbox6 .box .box6-1 div .right3 h5
+			{
+				
+				margin-top:0px;
+				margin-bottom: 10px;
+				color: white;
+				font-size: 20px;
+				/*background-color: goldenrod;*/
+			}
+			.bigbox6 .box .box6-1 div .right3 p
+			{
+				margin-top: 0;
+				color: white;
+				font-size: 15px;
+				
+			}
+			.bigbox6 .box .box6-1 ul li
+			{
+				color: gray;
+				font-size: 15px;
+				display: inline-block;
+			}
+			.bigbox6 .box .box6-2 ul li
+			{
+				padding: 6px 15px;
+				color: gainsboro;
+				font-size: 15px;
+				background:url(img/list-arrow.png) no-repeat 0px 15px;
+				list-style: none;
+				line-height: 1.8em;
+				cursor: pointer;
+			}
+			.bigbox6 .box .box6-2 ul li:hover 
+			{
+				color: orange;
+			}
+			.phone
+			{
+				width: 40px;
+				height: 40px;
+				background: url(img/img-sprite1.png) no-repeat -220px 0px;
+				display: inline-block;
+			}
+			.smartphone
+			{
+				width: 40px;
+				height: 40px;
+				background: url(img/img-sprite1.png) no-repeat -260px 0px;
+				display: inline-block;
+			}
+			.message
+			{
+				width: 40px;
+				height: 40px;
+				background: url(img/img-sprite1.png) no-repeat -300px 0px;
+				display: inline-block;
+			}
+		</style>
+	    <style type="text/css">
+	    	.bigbox7
+	    	{
+	    		
+	    		padding-top: 100px;
+	    		
+	    		width: 100%;
+	    		min-width: 1300px;
+	    		height: 500px;
+	    		
+	    		/*background-color: orange;*/
+	    	}
+	        .bigbox7 .box
+	        {
+	        	margin:0 auto;
+	        	
+	        	width: 1300px;
+	        	height: 100%;
+	        	
+	        	
+	        	/*background-color: goldenrod;*/
+	        }
+	        .bigbox7 .box .box7-1
+	        {
+	        	margin: 0 auto;
+	        	margin-top: 35px;
+	        	
+	        	width: 90%;
+	        	height: 20%;
+	        	
+	        	/*background-color: green;*/
+	        }
+	         .bigbox7 .box .box7-2
+	        {
+	        	margin: 0 auto;
+	        	margin-top: 35px;
+	        	
+	        	width: 68%;
+	        	height: 20%;
+	        	
+	        	/*background-color: green;*/
+	        }
+	         .bigbox7 .box .box7-1:nth-of-type(1)
+	        {
+	        	margin: 0 auto;
+	        	margin-top: 35px;
+	        	
+	        	width: 26%;
+	        	height: 20%;
+	        	
+	        	/*background-color: green;*/
+	        }
+	        .bigbox7 .box .box7-1:nth-of-type(1) a
+	        {
+	        	margin-top: 10px;
+	        	margin-left: 6%;
+	        	width: 55px;
+	        	height: 55px;
+	        	/*background-color: red;*/
+	        	float: left;
+	        }
+	        .bigbox7 .box .box7-1 a i:hover
+	        {
+	        	opacity: 0.5;
+	        }
+	        .bigbox7 .box .box7-1:nth-of-type(2)
+	        {
+	        	height: 15%;
+	        }
+	        .bigbox7 .box .box7-1:nth-of-type(3)
+	        {
+	        	
+	        	margin-left: 0;
+	        
+	        	margin-top: 35px;
+	        	
+	        	width: 100%;
+	        	height: 20%;
+	        	
+	        	/*background-color: green;*/
+	        }
+            .bigbox7 .box .box7-2 ul
+	        {
+	        	display: block;
+	        	margin: 0 auto;
+				margin-top: 20px;				
+				
+				width: 80%;
+				padding: 0;
+				
+				font-size: 14px;
+				list-style: none;
+				overflow: hidden;
+				/*background-color: red;*/
+	        }
+	         .bigbox7 .box .box7-2 ul li
+	         {
+	         	margin-left: 3%;
+	         	
+	         	/*width: 5%;*/
+	         	font-size: 20px;
+	         	float: left;
+	         	/*background-color: palevioletred;*/
+	         	
+	         }
+	         .bigbox7 .box .box7-2 ul li a
+			{
+			    padding-left: 14px;
+			    padding-right: 14px;
+			    color: black;          /* 文字颜色 */
+			    line-height: 13.5px;     /* 行高 */   
+			    text-decoration: none;   /* 不显示超链接下划线 */
+			    white-space: nowrap;     
+			    /* 对于文本内的空白处，不会换行，文本会在在同一行上继续，
+			     * 直到遇到 <br> 标签为止。 */
+			}
+			.bigbox7 .box .box7-1 p
+			{
+				text-align: center;
+				font-size: 19px;
+			}
+	        .ic1
+	        {
+	        	width: 100%;
+	        	height: 100%;
+	        	/*margin: 0 0 0 1em;*/
+	        	display: inline-block;
+	        	background: url(img/img-sprite1.png) no-repeat 0px 0px;
+	        }
+	        .ic2
+	        {
+	        	width: 100%;
+	        	height: 100%;
+	        	/*margin: 0 0 0 1em;*/
+	        	display: inline-block;
+	        	background: url(img/img-sprite1.png) no-repeat -55px 0px;
+	        }
+	        .ic3
+	        {
+	        	width: 100%;
+	        	height: 100%;
+	        	/*margin: 0 0 0 1em;*/
+	        	display: inline-block;
+	        	background: url(img/img-sprite1.png) no-repeat -110px 0px;
+	        }
+	        .ic4
+	        {
+	        	width: 100%;
+	        	height: 100%;
+	        	/*margin: 0 0 0 1em;*/
+	        	display: inline-block;
+	        	background: url(img/img-sprite1.png) no-repeat -165px 0px;
+	        }
+	    </style> 
+	</head>
+	<body>
+		<div class="bigbox1">
+			<img src="img/banner.jpg" class="bigbox1jpg"/>
+			<div class="box1">
+				<div class="left1">
+					
+					<ul >
+						<li><a href="index.html">Home    </a></li>
+						<li><a>Aboue   </a></li>
+						<li><a>Servise </a></li>
+						<li><a>Products</a></li>
+						<li><a>Blog    </a></li>
+						<li><a href="contact.html">Contact </a></li>
+					</ul>
+				</div>
+				<div class="right1">
+					<form>
+						<input type="text" />
+						<input type="submit" value=""/>
+					</form>
+				</div>
+			</div>
+			<div class="box2">
+				
+				 <a href="index.html">Cultivation</a>
+				
+			</div>
+			
+		</div>
+		<div class="cbigbox2">
+			
+			<div class="cbox2-1">
+				<h3>Contact us</h3>
+			</div>
+			<div class="cbox2-2">
+				<div></div>
+			</div>
+			<div class="cbox2-3">
+				<form>
+					<div class="cbox2-3-1">
+						<div>
+							<span >Name:</span>
+							<input type="text" name="" id="" value="" />
+						</div>
+						<div>
+							<span >E-Mail:</span>
+							<input type="email" name="" id="" value="" />
+						</div>
+						<div>
+							<span >Subject:</span>
+							<input type="text" name="" id="" value="" />
+						</div>						
+					</div>
+					<div>
+						<span>Message:</span>
+						<textarea></textarea>
+						<input type="submit" name="" id="" value="SEND" />
+					</div>
+				</form>
+			</div>
+			
+		</div>		
+        
+        
+		<div class="bigbox6">
+			<div class="box">
+				<div class="box6-1">
+					<h4>Upcome events</h4>
+					<div>
+						<div class="left3">
+							<img src="img/im1.jpg"/>
+						</div>
+						<div class="right3">
+							<h5>sagittis magna</h5>
+							<p>
+								Lorem ipsum dolor
+								 sit 
+								amet,consectetur 
+								adipiscing elit.
+			
+							</p>
+						</div>
+					</div>
+					<div>
+						<div class="left3">
+							<img src="img/im2.jpg"/>
+						</div>
+						<div class="right3">
+							<h5>sagittis magna</h5>
+							<p>
+								Lorem ipsum dolor
+								 sit 
+								amet,consectetur 
+								adipiscing elit.
+			
+							</p>
+						</div>
+					</div>
+					<div>
+						<div class="left3">
+							<img src="img/im3.jpg"/>
+						</div>
+						<div class="right3">
+							<h5>sagittis magna</h5>
+							<p>
+								Lorem ipsum dolor
+								 sit 
+								amet,consectetur 
+								adipiscing elit.
+			
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="box6-2">
+					<h4>
+						Categories
+					</h4>
+					<ul>
+						<li>Praesent vestim molestie lacus.</li>
+						<li>Cras consequat iaculis lorem</li>
+						<li>Consectetur adipiscing iaculis</li>
+						<li>Lorem ipsum dolor sit</li>
+						<li>Cum sociis natoque penatibus et magnis </li>
+						<li>Integer molestie lorem</li>
+						<li>lorem,Cras consequat iaculis id vehicula</li>
+					</ul>
+				</div>
+				<div class="box6-1">
+					<h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contact</h4>
+					<ul>
+						<li>
+							<i class="phone"></i>
+						</li>
+						<li>
+							<p>1-000-000-0000</p>
+							<p>1-000-000-0000</p>
+						</li>
+					</ul>
+					<ul>	
+						<li>
+							<i class="smartphone"></i>
+						</li>
+						<li>
+							<p>Seventh Avenue</p>
+							<p> Chelsea, Manhattan</p>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<i class="message"></i>
+						</li>
+						<li>
+							<p>bcdefg@hijs.dfh</p>
+							<p>fjashfaf@jkfs.ckd</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="bigbox7">
+			<div class="box">
+				<div class="box7-1">
+					<a href=""><i class="ic1"></i></a>
+					<a href=""><i class="ic2"></i></a>
+					<a href=""><i class="ic3"></i></a>
+					<a href=""><i class="ic4"></i></a>
+				</div>
+			
+				<div class="box7-2">
+					<ul>
+						<li><a href="">home    </a></li>
+						<li><a href="">About   </a></li>
+						<li><a href="">Services</a></li>
+						<li><a href="">products</a></li>
+						<li><a href="">blog    </a></li>
+						<li><a href="">Contact </a></li>
+					</ul>
+				</div>
+			
+				<div class="box7-1">
+					<p>
+						Copyright © 2015.Company name All rights
+					   reserved.More Templates 模板之家- Collect 
+					   from 网页模板 
+					</p>
+				</div>
+			</div>
+		</div>
+		
+	</body>
+</html>
