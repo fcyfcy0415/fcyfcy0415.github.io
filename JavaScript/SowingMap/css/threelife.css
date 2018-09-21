@@ -1,0 +1,684 @@
+.box-size {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  background-size: cover;
+}
+.box-size1 {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  margin: auto;
+  width: 40px;
+  height: 40px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  z-index: 2;
+  cursor: pointer;
+  background-color: rgba(10, 10, 10, 0);
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+.box-size2 {
+  position: relative;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  height: 300px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  background-size: cover;
+}
+.box-size3 {
+  position: absolute;
+  top: 0px;
+  width: 49px;
+  height: 19px;
+  cursor: pointer;
+}
+.bigbox-size {
+  position: absolute;
+  width: 200px;
+  height: 300px;
+  overflow: hidden;
+  background-color: rgba(10, 10, 10, 0.7);
+}
+.op1 {
+  opacity: 1;
+}
+.op2 {
+  opacity: 0;
+}
+.bigbox {
+  position: absolute;
+  width: 200px;
+  height: 300px;
+  overflow: hidden;
+  background-color: rgba(10, 10, 10, 0.7);
+  top: 0px;
+  left: 0px;
+}
+.bigbox .box1 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  background-size: cover;
+  background-image: url(../img/threelife1.jpg);
+  opacity: 1;
+}
+.bigbox .box2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  background-size: cover;
+  background-image: url(../img/threelife2.jpg);
+}
+.bigbox .box3 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  background-size: cover;
+  background-image: url(../img/threelife3.jpg);
+}
+.bigbox .box4 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  background-size: cover;
+  background-image: url(../img/threelife4.jpg);
+}
+.bigbox .box5 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  background-size: cover;
+  background-image: url(../img/threelife5.jpg);
+}
+.bigbox .box6 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  background-size: cover;
+  background-image: url(../img/threelife6.jpg);
+}
+.bigbox .box7 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  background-size: cover;
+  background-image: url(../img/threelife7.jpg);
+}
+.bigbox .box8 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  background-size: cover;
+  background-image: url(../img/threelife8.jpg);
+}
+.bigbox .box9 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  background-size: cover;
+  background-image: url(../img/threelife9.jpg);
+}
+.bigbox .box10 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  background-size: cover;
+  background-image: url(../img/threelife10.jpg);
+}
+.bigbox .box11 {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  margin: auto;
+  width: 40px;
+  height: 40px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  z-index: 2;
+  cursor: pointer;
+  background-color: rgba(10, 10, 10, 0);
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  left: -20px;
+}
+.bigbox .box12 {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  margin: auto;
+  width: 40px;
+  height: 40px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  z-index: 2;
+  cursor: pointer;
+  background-color: rgba(10, 10, 10, 0);
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  right: -20px;
+}
+.superbox {
+  position: absolute;
+  width: 200px;
+  height: 300px;
+  overflow: hidden;
+  background-color: rgba(10, 10, 10, 0.7);
+  top: 0px;
+  left: 220px;
+}
+.superbox .bigbox1 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 2000px;
+  height: 300px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+.superbox .bigbox1 .box1-1 {
+  position: relative;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  height: 300px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  background-size: cover;
+  background-image: url(../img/threelife1.jpg);
+  opacity: 1;
+}
+.superbox .bigbox1 .box1-2 {
+  position: relative;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  height: 300px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  background-size: cover;
+  background-image: url(../img/threelife2.jpg);
+}
+.superbox .bigbox1 .box1-3 {
+  position: relative;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  height: 300px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  background-size: cover;
+  background-image: url(../img/threelife3.jpg);
+}
+.superbox .bigbox1 .box1-4 {
+  position: relative;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  height: 300px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  background-size: cover;
+  background-image: url(../img/threelife4.jpg);
+}
+.superbox .bigbox1 .box1-5 {
+  position: relative;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  height: 300px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  background-size: cover;
+  background-image: url(../img/threelife5.jpg);
+}
+.superbox .bigbox1 .box1-6 {
+  position: relative;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  height: 300px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  background-size: cover;
+  background-image: url(../img/threelife6.jpg);
+}
+.superbox .bigbox1 .box1-7 {
+  position: relative;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  height: 300px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  background-size: cover;
+  background-image: url(../img/threelife7.jpg);
+}
+.superbox .bigbox1 .box1-8 {
+  position: relative;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  height: 300px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  background-size: cover;
+  background-image: url(../img/threelife8.jpg);
+}
+.superbox .bigbox1 .box1-9 {
+  position: relative;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  height: 300px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  background-size: cover;
+  background-image: url(../img/threelife9.jpg);
+}
+.superbox .bigbox1 .box1-10 {
+  position: relative;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  height: 300px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  background-size: cover;
+  background-image: url(../img/threelife10.jpg);
+}
+.superbox .box1-11 {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  margin: auto;
+  width: 40px;
+  height: 40px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  z-index: 2;
+  cursor: pointer;
+  background-color: rgba(10, 10, 10, 0);
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  left: -20px;
+}
+.superbox .box1-12 {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  margin: auto;
+  width: 40px;
+  height: 40px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  z-index: 2;
+  cursor: pointer;
+  background-color: rgba(10, 10, 10, 0);
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  right: -20px;
+}
+.bigbox2 {
+  position: absolute;
+  width: 200px;
+  height: 300px;
+  overflow: hidden;
+  background-color: rgba(10, 10, 10, 0.7);
+  top: 0px;
+  left: 440px;
+}
+.bigbox2 .box2-1 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  background-size: cover;
+  background-image: url(../img/threelife4.jpg);
+}
+.bigbox2 .box2-2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  background-size: cover;
+  background-image: url(../img/threelife6.jpg);
+}
+.bigbox2 .box2-3 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  background-size: cover;
+  background-image: url(../img/threelife3.jpg);
+}
+.bigbox2 .box2-4 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  background-size: cover;
+  background-image: url(../img/threelife8.jpg);
+}
+.bigbox2 .box21 {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  margin: auto;
+  width: 40px;
+  height: 40px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  z-index: 2;
+  cursor: pointer;
+  background-color: rgba(10, 10, 10, 0);
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  left: -20px;
+}
+.bigbox2 .box22 {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  margin: auto;
+  width: 40px;
+  height: 40px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  z-index: 2;
+  cursor: pointer;
+  background-color: rgba(10, 10, 10, 0);
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  right: -20px;
+}
+.bigbox3 {
+  position: absolute;
+  top: 280px;
+  left: 440px;
+  width: 200px;
+  height: 20px;
+}
+.bigbox3 .box3-1 {
+  position: absolute;
+  top: 0px;
+  width: 49px;
+  height: 19px;
+  cursor: pointer;
+  left: 0px;
+  background-color: rgba(10, 10, 10, 0.2);
+}
+.bigbox3 .box3-2 {
+  position: absolute;
+  top: 0px;
+  width: 49px;
+  height: 19px;
+  cursor: pointer;
+  left: 50px;
+  background-color: rgba(10, 10, 10, 0.2);
+}
+.bigbox3 .box3-3 {
+  position: absolute;
+  top: 0px;
+  width: 49px;
+  height: 19px;
+  cursor: pointer;
+  left: 100px;
+  background-color: rgba(10, 10, 10, 0.2);
+}
+.bigbox3 .box3-4 {
+  position: absolute;
+  top: 0px;
+  width: 49px;
+  height: 19px;
+  cursor: pointer;
+  left: 150px;
+  background-color: rgba(10, 10, 10, 0.2);
+}
+.bigbox3 .box3-5 {
+  position: absolute;
+  top: 0px;
+  width: 49px;
+  height: 19px;
+  cursor: pointer;
+  left: 0px;
+  background-color: rgba(86, 179, 158, 0.3);
+}
+.bigbox3 .box3-6 {
+  position: absolute;
+  top: 0px;
+  width: 49px;
+  height: 19px;
+  cursor: pointer;
+  left: 50px;
+  background-color: rgba(39, 111, 170, 0.3);
+}
+.bigbox3 .box3-7 {
+  position: absolute;
+  top: 0px;
+  width: 49px;
+  height: 19px;
+  cursor: pointer;
+  left: 100px;
+  background-color: rgba(82, 13, 99, 0.2);
+}
+.bigbox3 .box3-8 {
+  position: absolute;
+  top: 0px;
+  width: 49px;
+  height: 19px;
+  cursor: pointer;
+  left: 150px;
+  background-color: rgba(214, 195, 22, 0.2);
+}
+.bigbox4 {
+  position: absolute;
+  width: 200px;
+  height: 300px;
+  overflow: hidden;
+  background-color: rgba(10, 10, 10, 0.7);
+  top: 320px;
+  left: 0px;
+}
+.bigbox4 .box4-1 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  background-size: cover;
+  background-image: url(../img/threelife4.jpg);
+}
+.bigbox4 .box4-2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  background-size: cover;
+  background-image: url(../img/threelife6.jpg);
+}
+.bigbox4 .box4-3 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  background-size: cover;
+  background-image: url(../img/threelife3.jpg);
+}
+.bigbox4 .box4-4 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  background-size: cover;
+  background-image: url(../img/threelife8.jpg);
+}
+.bigbox5 {
+  position: absolute;
+  top: 600px;
+  left: 0px;
+  width: 200px;
+  height: 20px;
+}
+.bigbox5 .box5-1 {
+  position: absolute;
+  top: 0px;
+  width: 49px;
+  height: 19px;
+  cursor: pointer;
+  left: 0px;
+  background-color: rgba(10, 10, 10, 0.2);
+}
+.bigbox5 .box5-2 {
+  position: absolute;
+  top: 0px;
+  width: 49px;
+  height: 19px;
+  cursor: pointer;
+  left: 50px;
+  background-color: rgba(10, 10, 10, 0.2);
+}
+.bigbox5 .box5-3 {
+  position: absolute;
+  top: 0px;
+  width: 49px;
+  height: 19px;
+  cursor: pointer;
+  left: 100px;
+  background-color: rgba(10, 10, 10, 0.2);
+}
+.bigbox5 .box5-4 {
+  position: absolute;
+  top: 0px;
+  width: 49px;
+  height: 19px;
+  cursor: pointer;
+  left: 150px;
+  background-color: rgba(10, 10, 10, 0.2);
+}
+.bigbox5 .box5-5 {
+  position: absolute;
+  top: 0px;
+  width: 49px;
+  height: 19px;
+  cursor: pointer;
+  left: 0px;
+  background-color: rgba(86, 179, 158, 0.3);
+}
+.bigbox5 .box5-6 {
+  position: absolute;
+  top: 0px;
+  width: 49px;
+  height: 19px;
+  cursor: pointer;
+  left: 50px;
+  background-color: rgba(39, 111, 170, 0.3);
+}
+.bigbox5 .box5-7 {
+  position: absolute;
+  top: 0px;
+  width: 49px;
+  height: 19px;
+  cursor: pointer;
+  left: 100px;
+  background-color: rgba(82, 13, 99, 0.2);
+}
+.bigbox5 .box5-8 {
+  position: absolute;
+  top: 0px;
+  width: 49px;
+  height: 19px;
+  cursor: pointer;
+  left: 150px;
+  background-color: rgba(214, 195, 22, 0.2);
+}
+.box11:hover,
+.box12:hover,
+.box1-11:hover,
+.box1-12:hover,
+.box21:hover,
+.box22:hover {
+  background-color: rgba(10, 10, 10, 0.7);
+}
+/*# sourceMappingURL=./threelife.css.map */
