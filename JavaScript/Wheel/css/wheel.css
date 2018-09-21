@@ -5,7 +5,7 @@
   margin: 0 auto;
   width: 650px;
   height: 600px;
-  background-image: url(/Wheel/img/turntable-bg.jpg);
+  background-image: url(../img/turntable-bg.jpg);
   background-repeat: no-repeat;
 }
 .bigbox .box1 {
@@ -14,7 +14,7 @@
   top: 60px;
   height: 450px;
   width: 450px;
-  background-image: url(/Wheel/img/turntable.png);
+  background-image: url(../img/turntable.png);
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   -webkit-transition: all 3s;
@@ -27,7 +27,7 @@
   left: 254px;
   height: 228px;
   width: 174px;
-  background-image: url(/Wheel/img/pointer.png);
+  background-image: url(../img/pointer.png);
   background-repeat: no-repeat;
 }
 /*# sourceMappingURL=./wheel.css.map */
