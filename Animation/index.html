@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css" id="superbox">
+			body
+			{
+				padding: 0;
+				margin: 0;
+			}
+			.superbox
+			{
+				position: relative;
+				width: 100%;
+				min-width: 700px;
+				height: 100vh;
+				min-height: 500px;
+				/*background-color: ;*/
+				background:-webkit-linear-gradient(left,rgba(225,242,11,.4),rgba(0,0,200,0));
+			}
+			.superbox:after
+			{
+				content: "";
+				position: absolute;
+				top: 0px;
+				left: 0px;
+				width: 100%;
+				min-width: 700px;
+				height: 100vh;
+				min-height: 500px;
+				/*background-color: red;*/
+				background:-webkit-linear-gradient(240deg,rgba(100,31,236,.4),rgba(0,0,200,0));
+				z-index: -19;
+			}
+			.superbox:before
+			{
+				content: "";
+				position: absolute;
+				top: 0px;
+				left: 0px;
+				width: 100%;
+				min-width: 700px;
+				height: 100vh;
+				min-height: 500px;
+				/*background-color: red;*/
+				z-index: -19;
+				background:-webkit-linear-gradient(bottom,rgba(215,9,240,.64),rgba(0,0,200,0));
+			}
+		</style>
+		<style type="text/css" id="superbox1">
+			p
+			{
+				padding: 0;
+				margin: 0;
+			}
+			.superbox1
+			{
+				position: absolute;
+				left: 0px;
+				right: 0px;
+				margin: 20vh auto;
+				
+				height: 60vh;
+				width: 50vh;
+				min-width: 250px;
+				max-width: 400px;
+				min-height:300px ;
+				max-height: 550px;
+				border-radius: 15px;
+				perspective: 1343;
+				perspective-origin: 50% 19%;
+				-webkit-perspective: 1343;
+			}
+			.superbox1-1
+			{
+				position: absolute;
+				top: 0px;
+				left: 0px;
+				
+				width: 100%;
+				height: 100%;
+				
+				border-radius: 15px;
+				background-color: black;
+				box-shadow: 10px 10px 40px rgba(0,0,0,.5);
+				
+				transition: all 1s; 
+				
+				
+				transform-style:preserve-3d ;
+				transform: translateZ(15px);
+			}
+			input{display: none;}
+			.bigbox
+			{
+				position: relative;
+				top: 0px;
+				left: 0px;
+				width: 100%;
+				height: 100%;
+				
+				
+				border-radius: 15px;
+				transform-style:preserve-3d ;
+				transform: translateZ(15px);
+			}
+			.bigbox1-1
+			{
+				position: absolute;
+				top: 0px;
+				left: 0px;
+				width: 100%;
+				height: 100%;
+				background-image: url(img/600x600.jpg);
+				background-position: 50% 50%;
+				border-radius: 15px;
+				background-size: 130% 100%;
+			    transition: all 1s; 
+			}
+			input:checked+.superbox1-1
+			{
+				transform: rotateX(60deg);
+				transform-origin: 70% 70%;
+				
+			}
+			input:checked+.superbox1-1 .bigbox .bigbox1-1
+			{
+				-webkit-filter: brightness(50%);
+			}
+			.bigbox p:nth-of-type(1)
+			{
+				
+				position: absolute;
+				top: 25%;
+				right: 0px;
+				left: 0px;
+				width: 100%;
+				height: 10%;
+				margin: 0 auto;
+				display: block;
+				color: white;
+				font-size:40px;
+				text-align: center;
+				/*background-color: black;*/
+			}
+			.bigbox p:nth-of-type(2)
+			{
+				
+				position: absolute;
+				top: 37%;
+				right: 0px;
+				left: 0px;
+				width: 100%;
+				height: 5%;
+				margin: 0 auto;
+				display: block;
+				color: white;
+				font-size:20px;
+				text-align: center;
+				/*background-color: black;*/
+			}
+			.bigbox p:nth-of-type(3)
+			{
+				
+				position: absolute;
+				top: 53%;
+				right: 0px;
+				left: 0px;
+				width: 100%;
+				height: 10%;
+				margin: 0 auto;
+				display: block;
+				color: white;
+				font-size:40px;
+				text-align: center;
+				/*background-color: black;*/
+				
+			}
+			.bigbox .box
+			{
+				position: absolute;
+				display: flex;
+				flex-wrap: nowrap;
+				top: 44%;
+				right: 0px;
+				left: 0px;
+				width: 100%;
+				height: 6%;
+				margin: 0 auto;
+				display: block;
+				color: white;
+				font-size:20px;
+				text-align: center;
+				/*background-color: black;*/
+				flex-basis: 9%;
+			}
+			.bigbox .box>div
+			{
+				position: relative;
+				margin-left: 5%;
+				height: 100%;
+				width: 8%;
+				float: left;
+				transform: rotate(45deg);
+				background-color: white;
+				transition: all 1s; 
+				
+			}
+			.bigbox .box>div>span
+			{
+				position: absolute;
+				top: 0px;
+				display: block;
+				height: 100%;
+				width: 100%;
+				
+				color: black;
+			    opacity: 0;
+				background-color: white;
+				transition: all 1s; 
+				
+			}
+			.bigbox .box>div div:nth-of-type(1)
+			{
+				position: absolute;
+				right: 0px;
+				width: 0px;
+				height:100%;
+				background:-webkit-linear-gradient(left,#9ebfd2,#cfcfd5);
+				transform: rotateY(-90deg)rotateX(-90deg);
+				transition: all 1s; 
+				transform-origin: 100% 100%;
+			}
+			.bigbox .box>div div:nth-of-type(1) span
+			{
+				position: absolute;
+				right: 10px;
+				top: 5px;
+				color: black;
+			}
+			.bigbox .box>div div:nth-of-type(2)
+			{
+				position: absolute;
+				right: 0px;
+				width: 0px;
+				height:100%;
+				background:-webkit-linear-gradient(left,#567281,#86B8d2);
+				transform: rotateY(-90deg);
+				transition: all 1s; 
+				transform-origin: 100% 0;
+			}
+			.bigbox .box>div:nth-of-type(1)
+			{
+				margin-left: 8%;
+			}
+			
+			input:checked+.superbox1-1 .box>div
+			{
+				transform-style:preserve-3d ;
+				transform: rotate(45deg) translateZ(15px);
+			}
+			input:checked+.superbox1-1 .box>div>span{opacity: 1;}
+			
+			input:checked+.superbox1-1 .box>div:nth-of-type(1){transform: rotate(45deg) translateZ(140px);}
+			input:checked+.superbox1-1 .box>div:nth-of-type(2){transform: rotate(45deg) translateZ(70px);}
+			input:checked+.superbox1-1 .box>div:nth-of-type(3){transform: rotate(45deg) translateZ(105px);}
+			input:checked+.superbox1-1 .box>div:nth-of-type(4){transform: rotate(45deg) translateZ(170px);}
+			input:checked+.superbox1-1 .box>div:nth-of-type(5){transform: rotate(45deg) translateZ(50px);}
+			input:checked+.superbox1-1 .box>div:nth-of-type(6){transform: rotate(45deg) translateZ(50px);}
+			input:checked+.superbox1-1 .box>div:nth-of-type(7){transform: rotate(45deg) translateZ(70px);}
+		
+		    input:checked+.superbox1-1 .box>div:nth-of-type(1) div:nth-of-type(1){width: 139px;}
+			input:checked+.superbox1-1 .box>div:nth-of-type(2) div:nth-of-type(1){width: 69px;}
+			input:checked+.superbox1-1 .box>div:nth-of-type(3) div:nth-of-type(1){width: 104px;}
+			input:checked+.superbox1-1 .box>div:nth-of-type(4) div:nth-of-type(1){width: 169px;}
+			input:checked+.superbox1-1 .box>div:nth-of-type(5) div:nth-of-type(1){width: 49px;}
+			input:checked+.superbox1-1 .box>div:nth-of-type(6) div:nth-of-type(1){width: 49px;}
+			input:checked+.superbox1-1 .box>div:nth-of-type(7) div:nth-of-type(1){width: 69px;}
+			
+			input:checked+.superbox1-1 .box>div:nth-of-type(1) div:nth-of-type(2){width: 139px;}
+			input:checked+.superbox1-1 .box>div:nth-of-type(2) div:nth-of-type(2){width: 69px;}
+			input:checked+.superbox1-1 .box>div:nth-of-type(3) div:nth-of-type(2){width: 104px;}
+			input:checked+.superbox1-1 .box>div:nth-of-type(4) div:nth-of-type(2){width: 169px;}
+			input:checked+.superbox1-1 .box>div:nth-of-type(5) div:nth-of-type(2){width: 49px;}
+			input:checked+.superbox1-1 .box>div:nth-of-type(6) div:nth-of-type(2){width: 49px;}
+			input:checked+.superbox1-1 .box>div:nth-of-type(7) div:nth-of-type(2){width: 69px;}
+		</style>
+	</head>
+	<body>
+		<div class="superbox">
+			<label class="superbox1">
+				<input type="checkbox" name="" id="" value="" />
+				<div class="superbox1-1">
+					<div class="bigbox">
+						<div class="bigbox1-1"></div>
+						
+						<p>STEPS</p>
+						<p>THIS WEEK</p>
+						
+						<div class="box">
+							<div>
+								<span>M</span>
+								<div>
+									<span>2000</span>
+								</div>
+								<div></div>
+							</div>
+							<div>
+								<span>T</span>
+								<div>
+									<span>10,000</span>
+								</div>
+								<div></div>
+							</div>
+							<div>
+								<span>T</span>
+								<div>
+									<span>15,000</span>
+								</div>
+								<div></div>
+							</div>
+							<div>
+								<span>T</span>
+								<div>
+									<span>24,000</span>
+								</div>
+								<div></div>
+							</div>
+							<div>
+								<span>T</span>
+								<div>
+									<span>7000</span>
+								</div>
+								<div></div>
+							</div>
+							<div>
+								<span>T</span>
+								<div>
+									<span>7000</span>
+								</div>
+								<div></div>
+							</div>
+							<div>
+								<span>T</span>
+								<div>
+									<span>10,000</span>
+								</div>
+								<div></div>
+							</div>
+						</div>
+						<p>93,000</p>
+					</div>
+				</div>
+			</label>
+		</div>
+		<script src="https://cdn.bootcss.com/prefixfree/1.0.7/prefixfree.min.js" ></script>
+	</body>
+</html>
