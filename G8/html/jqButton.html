@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .bigbox{
+            position:relative;
+            right: 0px;
+            left: 0px;
+            margin: 0 auto;
+            width: 200px;
+            height: 70px;
+            overflow: hidden;
+            background-color:rgba(100, 100, 100,1) ;
+        }
+        .bigbox .box1{
+            position: absolute;
+            /* right: 0px;
+            top: 0px; */
+            width: 200px;
+            height: 70px;
+            background-color:orange; 
+        }
+        .bigbox .box2{
+            position: absolute;
+            width: 20px;
+            height: 7px;
+            border-radius: 50%;
+            transition-property:transform,width,height;
+            transition-duration: .5s;
+            transform-origin: 50% 50%;
+            transform: scale(0,0);
+            background-color:rgba(100, 100,220, 1);     
+        }
+        .bigbox:hover .box2
+        {
+           transform: scale(30,30);
+        }
+        .bigbox a{
+            position: absolute;
+            display: block;
+            width: 200px;
+            height: 70px;
+            text-decoration: none;
+            font-size: 30px;
+            color: white;
+            text-align: center;
+            padding-top: 10px;
+        }
+    </style>
+    <script src="../js/jquery.js"></script>
+</head>
+<body>
+    <div id="bigbox"  class="bigbox">
+        <div  id="box1" class="box1"></div>
+        <div  id="box2" class="box2"></div>
+        <a href="">feng</a>
+    </div>
+    <script>
+        var bigbox=document.getElementById("bigbox")
+        var box2=document.getElementById("box2");
+        bigbox.onmousemove=function(ev){
+        x=ev.clientX-bigbox.offsetLeft;
+        y=ev.clientY-bigbox.offsetTop;
+        console.log(x+""+y );
+        box2.style.left=(x-1)+"px";
+        box2.style.top=(y)+"px";
+        }
+    </script>
+</body>
+</html>

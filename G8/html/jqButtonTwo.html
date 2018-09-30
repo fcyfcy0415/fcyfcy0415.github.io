@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <style>
+    	.bigbox{
+            position:relative;
+            right: 0px;
+            left: 0px;
+            margin: 0 auto;
+            width: 200px;
+            height: 70px;
+            overflow: hidden;
+            background-color:rgba(100, 100, 100,1) ;
+        }
+        .bigbox .box1{
+            position: absolute;
+            /* right: 0px;
+            top: 0px; */
+            width: 200px;
+            height: 70px;
+            background-color:orange; 
+        }
+        .bigbox .box2{
+            position: absolute;
+            width: 20px;
+            height: 7px;
+            border-radius: 50%;
+            transition-property:transform,width,height;
+            transition-duration: .5s;
+            transform-origin: 50% 50%;
+            transform: scale(0,0);
+            background-color:rgba(100, 100,220, 1);     
+        }
+        .bigbox .active
+        {
+           transform: scale(30,30);
+        }
+        .bigbox a{
+            position: absolute;
+            display: block;
+            width: 200px;
+            height: 70px;
+            text-decoration: none;
+            font-size: 30px;
+            color: white;
+            text-align: center;
+            padding-top: 10px;
+        }
+    </style>
+    <script src="../js/jquery.js"></script>
+</head>
+<body>
+    <div id="bigbox"  class="bigbox">
+        <div  id="box1" class="box1"></div>
+        <div  id="box2" class="box2"></div>
+        <a href="">feng</a>
+    </div>
+    <script>
+        $(".bigbox").hover(function(ev){
+        	$(".bigbox .box2").css({
+        		top:(ev.clientY-$(".bigbox").offset().top-3),
+        		left:(ev.clientX-$(".bigbox").offset().left-10)
+        	})
+        	$(".box2").addClass("active");
+        	console.log((ev.clientX - $('.bigbox').offset().left) + '/' + (ev.clientY - $('.bigbox').offset().top))
+        },function(ev){
+        	$(".box2").removeClass("active");
+        	$(".bigbox .box2").css({
+        		top:(ev.clientY-$(".bigbox").offset().top-3),
+        		left:(ev.clientX-$(".bigbox").offset().left-10)
+        	})
+        	
+        })
+    </script>
+</body>
+</html>
