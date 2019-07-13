@@ -1,11 +1,9 @@
 img {
   position: absolute;
-  -webkit-transition: all 0.1s linear;
   transition: all 0.1s linear;
 }
 img:nth-of-type(1) {
   position: absolute;
-  -webkit-transition: all 0s;
   transition: all 0s;
 }
 .superbox {

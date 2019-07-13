@@ -4,19 +4,26 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <link rel="stylesheet" href="../css/plane.css">
-</head>
-<body>
+</head> 
+<body onload="disablebegin()">
     <div id="superbox" class="superbox">
+        <!-- begin -->
         <div id="bigbox1" class="bigbox1">
-            <button id="buttonS" onclick="start()">开始游戏</button>
+            <button id="mone" onclick="one()">简单</button>
+            <button id="mtwo" onclick="two()">苦难</button>
+            <button id="mthree" onclick="three()">魔鬼</button>
+            <button id="buttons" disabled="disabled" onclick="start()">开始游戏</button>
         </div>
+        <!-- 画布 -->
         <div id="bigbox2" class="bigbox2">
-            <div class="grade">0</div>
+            <div id="grade" class="grade">0</div>
         </div>
+        <!-- 暂停 -->
         <div id="suspend" class="suspend">
             <button id="begin">继续游戏</button>
             <button id="restart" onclick="restart()">重新开始</button>
         </div>
+        <!-- 总结 -->
         <div id="bigbox3" class="bigbox3">
             <p id="final-text">飞机大战分数</p>
             <p id="final-score">1000</p>
