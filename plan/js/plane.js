@@ -217,7 +217,6 @@ bigbox2.onclick=function(){
     var  oneDide=function(){ this.dideX=[]; }
     var dideS=new oneDide(); 
     oneDide.prototype.newDide=function(){  
-        console.log(grade);
         var let1 = enemys.segments.length;
         //子弹碰撞检测 
         if(let1 != 0){
