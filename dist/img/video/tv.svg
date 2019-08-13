@@ -1,0 +1,11 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg t="1564288176636" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="8073" xmlns:xlink="http://www.w3.org/1999/xlink" width="200" height="200">
+    <defs>
+        <style type="text/css"></style>
+    </defs>
+     <rect id="svg_4" height="340" width="562" y="425" x="231" stroke-opacity="null" stroke-width="null" stroke="null" fill="#ffffff"/>
+  <path fill="#000000" id="svg_1" d="m790.4,374.2l-190.8,0l163.4,-118.4l-15,-51.6l-234.5,170l-2.4,0l-234.5,-170l-15.1,51.6l163.4,118.4l-191.3,0c-30.8,0 -55.7,24.9 -55.7,55.7l0,334.1c0,30.7 24.9,55.7 55.7,55.7l556.9,0c30.8,0 55.7,-24.9 55.7,-55.7l0,-334.1c-0.1,-30.7 -25,-55.7 -55.8,-55.7zm0.4,359.3c0,15.4 -12.4,27.8 -27.8,27.8l-501.3,0c-15.4,0 -27.8,-12.4 -27.8,-27.8l0,-278.5c0,-15.4 12.4,-27.8 27.8,-27.8l501.2,0c15.4,0 27.8,12.4 27.8,27.8l0.1,278.5z"/>
+  <rect id="svg_2" height="184" width="77" y="506" x="373" fill-opacity="null" stroke-opacity="null" stroke-width="null" stroke="null" fill="null"/>
+  <rect id="svg_3" height="184" width="77" y="505" x="573" fill-opacity="null" stroke-opacity="null" stroke-width="null" stroke="null" fill="null"/>
+ </svg>
